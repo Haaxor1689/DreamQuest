@@ -8,7 +8,7 @@ export default class App extends React.Component<{}, {}> {
         type: "Character",
         name: "Jannie",
         description: "Jannie was gut, she was here, he did stuff",
-        imageUrl: "https://via.placeholder.com/150",
+        imageUrl: "/assets/Clock.png",
         memory: {
             type: "Memory",
             value: 5,
