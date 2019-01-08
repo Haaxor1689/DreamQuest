@@ -1,8 +1,8 @@
 {
-  "name": "one-life-item-browser",
+  "name": "dream-quest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://haaxor1689.github.io/OneLifeItemBrowser/",
+  "homepage": "https://haaxor1689.github.io/DreamQuest/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.9",
     "@fortawesome/free-solid-svg-icons": "^5.6.0",
