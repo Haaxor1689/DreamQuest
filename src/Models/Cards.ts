@@ -1,29 +1,37 @@
 import {
     CharacterStat,
-    StatType,
-    Choice
+    Choice,
+    SlumberStat,
+    MemoryStat,
+    LucidityStat,
+    ProvidenceStat
 } from './Models';
 
 export type CardType = "Character" | "Simple" | "Choice";
 
-export interface BaseCard<T extends CardType> {
-    type: T;
+export interface BaseCard {
+    type: CardType;
     name: string;
     imageUrl: string;
     description: string;
 }
 
-export interface CharacterCard extends BaseCard<"Character"> {
-    memory: CharacterStat<"Memory">;
-    slumber: CharacterStat<"Slumber">;
-    lucidity: CharacterStat<"Lucidity">;
-    providence: CharacterStat<"Providence">;
+export interface CharacterCard extends BaseCard {
+    type: "Character";
+    memory: MemoryStat;
+    slumber: SlumberStat;
+    lucidity: LucidityStat;
+    providence: ProvidenceStat;
 }
 
-export interface SimpleCard extends BaseCard<"Simple"> {
-    stats: CharacterStat<StatType>[];
+export interface SimpleCard extends BaseCard {
+    type: "Simple";
+    stats: CharacterStat[];
 }
 
-export interface ChoiceCard extends BaseCard<"Choice"> {
+export interface ChoiceCard extends BaseCard {
+    type: "Choice";
     choices: Choice[];
 }
+
+export type Card = CharacterCard | SimpleCard | ChoiceCard;

@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { CharacterStat, StatType } from 'src/Models/Models';
+import { CharacterStat } from 'src/Models/Models';
 
-export default class CharacterStatComponent extends React.Component<CharacterStat<StatType>, {}> {
+export default class CharacterStatComponent extends React.Component<CharacterStat, {}> {
 
     private renderValue = (): string => (this.props.value > 0 ? "+" : "") + this.props.value;
     
