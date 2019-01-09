@@ -1,3 +1,9 @@
 
-export const getUrlPrefix = (): string => "https://github.com/Haaxor1689/DreamQuest/blob/master/";
-export const getImageUrl = (relativePath: string): string => getUrlPrefix() + relativePath + "?raw=true";
+export const getUrlPrefix = (): string => {
+    if (location.hostname !== "localhost") {
+        return "";
+    }
+    return "https://raw.githubusercontent.com/Haaxor1689/DreamQuest/master";
+}
+
+export const getUrl = (relativePath: string): string => getUrlPrefix() + relativePath;
