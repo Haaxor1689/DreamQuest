@@ -20,5 +20,26 @@
             "type": "Providence",
             "value": -2
         }
+    },
+    {
+        "type": "Choice",
+        "name": "Test",
+        "description": "Description description",
+        "choices": [
+            {
+                "description": "Option one",
+                "stats": {
+                    "type": "Memory",
+                    "value": -2
+                }
+            },
+            {
+                "description": "Option two",
+                "stats": {
+                    "type": "Lucidity",
+                    "value": 5
+                }
+            }
+        ]
     }
 ]
