@@ -1,38 +1,38 @@
 import * as React from 'react';
 
 import CharacterCardComponent from "./CharacterCardComponent";
-import { CharacterCard } from 'src/Models/Cards';
+import { Card } from 'src/Models/Cards';
+import { getCards } from 'src/Helpers/CardsRetriever';
 
-export default class App extends React.Component<{}, {}> {
-    plcCharacterCard = (): CharacterCard => ({
-        type: "Character",
-        name: "Jannie",
-        description: "Jannie was gut, she was here, he did stuff",
-        imageUrl: "/assets/Clock.png",
-        memory: {
-            type: "Memory",
-            value: 5,
-        },
-        slumber: {
-            type: "Slumber",
-            value: 10,
-        },
-        lucidity: {
-            type: "Lucidity",
-            value: 4,
-        },
-        providence: {
-            type: "Providence",
-            value: -2,
-        },
-    });
+interface IAppState {
+    cards: Card[]
+}
+
+export default class App extends React.Component<{}, IAppState> {
+    public state: IAppState = {
+        cards: [],
+    }
+
+    componentDidMount = async () => {
+        const cards = await getCards();
+        this.setState((prevState) => ({
+            ...prevState,
+            cards,
+        }))
+    }
 
     public render() {
         return (
             <main role="main">
                 <div className="containter">
                     <div className="row">
-                        <CharacterCardComponent {...this.plcCharacterCard()} />
+                        {this.state.cards.map((card) => {
+                            switch (card.type) {
+                                case "Character": return <CharacterCardComponent {...card} />;
+                                default: return <div></div>;
+                            }
+                        })}
+                        
                     </div>
                 </div>
             </main>
