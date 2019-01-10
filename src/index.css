@@ -1,28 +1,23 @@
 .card {
-    width: 225px;
-    height: 350px;
+    width: 360px;
+    height: 504px;
     background-color: grey;
     margin: 1rem auto;
-    padding: 25px;
+    padding: 0;
+    background: url("/assets/DreamCard.png") no-repeat;
+    background-size: 100%;
 }
 
-.character-stat {
+.card-title {
+    height: 54px;
+    margin: 0 auto;
+}
+
+.card-image {
+    height: 114px;
+}
+
+.stat {
     display: inline-block;
     width: 3rem;
-}
-
-.character-stat-Memory::after {
-    content: "Memory";
-}
-
-.character-stat-Slumber::after {
-    content: "Slumber";
-}
-
-.character-stat-Lucidity::after {
-    content: "Lucidity";
-}
-
-.character-stat-Providence::after {
-    content: "Providence";
 }

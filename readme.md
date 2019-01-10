@@ -36,12 +36,13 @@ Character sheets representing the character the player has chosen for the advent
 
 **A character sheet contains these elements:**
 
+- Twice the size o normal card
 - Character name and occupation
 - A short story of the character background
 
 ### Memory value
 
-- **Range:** 2 to 6
+- **Range:** 2+ to 6+
 - **Mod:** ++/-- token
 
 Used to determine where the character resumes from on the dream-path when they return to sleep
@@ -50,6 +51,7 @@ Used to determine where the character resumes from on the dream-path when they r
 
 - **Range:** 0 to 12
 - **Mod:** Clock
+- **Icon:** ZzZ..
 
 Represents for how much longer the character can maintain their existence in the dream world. If a character’s Slumber value hits 0 at any time, they wake up.
 
@@ -60,7 +62,7 @@ Represents for how much longer the character can maintain their existence in the
 ### Lucidity value
 
 - **Range:** 0 to 6
-- **Mod:** ++/-- token
+- **Mod:** ++/-- token (slider)
 
 Represents how much control the character can exercise over the dream realms. Lucidity is used to determine the outcome of encounters. The players may also attempt to wake up other players using lucidity (provided they are on the same space as the other character).
 

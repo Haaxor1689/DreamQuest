@@ -1,13 +1,9 @@
 import {
-    CharacterStat,
+    Stats,
     Choice,
-    SlumberStat,
-    MemoryStat,
-    LucidityStat,
-    ProvidenceStat
 } from './Models';
 
-export type CardType = "Character" | "Simple" | "Choice";
+export type CardType = "Character" | "Reality" | "Dream" | "Boss";
 
 export interface BaseCard {
     type: CardType;
@@ -18,20 +14,23 @@ export interface BaseCard {
 
 export interface CharacterCard extends BaseCard {
     type: "Character";
-    memory: MemoryStat;
-    slumber: SlumberStat;
-    lucidity: LucidityStat;
-    providence: ProvidenceStat;
+    stats: Stats;
 }
 
-export interface SimpleCard extends BaseCard {
-    type: "Simple";
-    stats: CharacterStat[];
+export interface RealityCard extends BaseCard {
+    type: "Reality";
+    effect: Stats;
 }
 
-export interface ChoiceCard extends BaseCard {
-    type: "Choice";
+export interface DreamCard extends BaseCard {
+    type: "Dream";
+    move: number;
     choices: Choice[];
 }
 
-export type Card = CharacterCard | SimpleCard | ChoiceCard;
+export interface BossCard extends BaseCard {
+    type: "Boss";
+
+}
+
+export type Card = CharacterCard | RealityCard | DreamCard | BossCard;

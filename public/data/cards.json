@@ -2,44 +2,54 @@
     {
         "type": "Character",
         "name": "Jannie",
-        "description": "Jannie was gut, she was here, he did stuff",
-        "imageUrl": "/assets/Clock.png",
-        "memory": {
-            "type": "Memory",
-            "value": 5
-        },
-        "slumber": {
-            "type": "Slumber",
-            "value": 10
-        },
-        "lucidity": {
-            "type": "Lucidity",
-            "value": 4
-        },
-        "providence": {
-            "type": "Providence",
-            "value": -2
+        "description": "Jannie was gut, she was here, she did stuff",
+        "imageUrl": "https://via.placeholder.com/200?text=Placeholder",
+        "stats" : {
+            "memory": 5,
+            "slumber": 10,
+            "lucidity": 4,
+            "providence": -2
         }
     },
     {
-        "type": "Choice",
-        "name": "Test",
+        "type": "Reality",
+        "name": "Reality card",
         "description": "Description description",
+        "imageUrl": "https://via.placeholder.com/200?text=Placeholder",
+        "effect": {
+            "movement": 1,
+            "providence": 2
+        }
+    },
+    {
+        "type": "Dream",
+        "name": "Dream card test",
+        "description": "Description description",
+        "imageUrl": "https://via.placeholder.com/200?text=Placeholder",
         "choices": [
             {
                 "description": "Option one",
-                "stats": {
-                    "type": "Memory",
-                    "value": -2
+                "requirement": {
+                    "dice": 4
+                },
+                "reward": {
+                    "movement": 1,
+                    "providence": 2
                 }
             },
             {
                 "description": "Option two",
-                "stats": {
-                    "type": "Lucidity",
-                    "value": 5
+                "requirement": {},
+                "reward": {
+                    "slumber": 2
                 }
             }
         ]
+    },
+    {
+        "type": "Boss",
+        "name": "Boss card tes",
+        "description": "Description description",
+        "imageUrl": "https://via.placeholder.com/200?text=Placeholder"
     }
 ]
