@@ -24,8 +24,9 @@ export interface RealityCard extends BaseCard {
 
 export interface DreamCard extends BaseCard {
     type: "Dream";
-    move: number;
-    choices: Choice[];
+    movement: number;
+    choices?: Choice[];
+    effect?: Stats;
 }
 
 export interface BossCard extends BaseCard {

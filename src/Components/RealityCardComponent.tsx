@@ -9,7 +9,7 @@ export default class RealityCardComponent extends React.Component<RealityCard, {
         <div className="row">
             <div className="col">
                 <hr/>
-                <StatsComponent {...this.props.effect} />
+                <StatsComponent stats={this.props.effect} />
             </div>
         </div>
     )

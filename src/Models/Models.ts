@@ -8,7 +8,8 @@ export interface Stats {
 }
 
 export interface Choice {
-    description: string;
-    requirement: Stats;
-    reward: Stats;
+    description?: string;
+    requirement?: Stats;
+    success?: Stats;
+    failure?: Stats;
 }

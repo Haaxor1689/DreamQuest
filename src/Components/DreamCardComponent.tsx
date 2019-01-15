@@ -1,30 +1,31 @@
 import * as React from 'react';
 
 import { DreamCard } from 'src/Models/Cards';
-import { Choice } from 'src/Models/Models';
 import StatsComponent from './StatsComponent';
 import BaseCardComponent from './BaseCardComponent';
+import DividerComponent from './DividerComponent';
+import ChoiceComponent from './ChoiceComponent';
 
 export default class DreamCardComponent extends React.Component<DreamCard, {}> {
-    private renderChoice = (choice: Choice): JSX.Element => (
+    private renderEffect = (): JSX.Element => (
         <div className="col">
-            <p>{choice.description}</p>
-            <StatsComponent { ...choice.requirement } />
-            <hr/>
-            <StatsComponent { ...choice.reward } />
+            <span>You gain: </span>
+            <StatsComponent isReward stats={this.props.effect!} />
         </div>
     )
     
     private renderBody = (): JSX.Element => (
         <div className="row">
             <div className="col">
-                <hr/>
+                <DividerComponent/>
                 <div className="row">
-                    { this.props.choices.map((choice) => this.renderChoice(choice)) }
+                    { this.props.effect && this.renderEffect() }
+                    { this.props.choices && this.props.choices.map((choice) => <ChoiceComponent { ...choice} />) }
                 </div>
             </div>
+            <div className="card-movement">{this.props.movement}</div>
         </div>
     )
-    
+
     public render = () => <BaseCardComponent card={this.props} body={this.renderBody()} />
 }
