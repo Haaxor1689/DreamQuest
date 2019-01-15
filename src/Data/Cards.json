@@ -4,7 +4,7 @@
         "name": "Jannie",
         "description": "Jannie was gut, she was here, she did stuff",
         "imageUrl": "",
-        "stats" : {
+        "stats": {
             "memory": 5,
             "slumber": 10,
             "lucidity": 4,
@@ -54,23 +54,25 @@
     },
     {
         "type": "Dream",
-        "name": "Great library",
-        "description": "You encounter a library cataloguing all the dreams ever dreamt by humans.",
+        "name": "Great Library",
+        "description": "You arrive upon a library cataloguing all the dreams ever dreamt by humans.",
         "imageUrl": "",
         "movement": 2,
         "choices": [
             {
                 "description": "Read the library",
                 "requirement": {
-                    "dice": 0
+                    "dice": "lucidity"
                 },
                 "success": {
-                    "movement": 3,
-                    "providence": 2
+                    "movement": 1,
+                    "providence": 2,
+                    "slumber": 2
                 },
                 "failure": {
-                    "slumber": -3,
-                    "providence": -1
+                    "movement": -2,
+                    "providence": -1,
+                    "slumber": -3
                 }
             },
             {
@@ -80,7 +82,7 @@
     },
     {
         "type": "Dream",
-        "name": "Tax recounting",
+        "name": "Tax Recounting",
         "description": "The villagers have all forgotten how to count. They see you are not of this world, and ask you to help count their local treasury.",
         "imageUrl": "",
         "movement": 0,
@@ -97,18 +99,18 @@
             {
                 "description": "Steal from the treasury",
                 "success": {
-                    "providence": -1,
-                    "movement": 5
+                    "movement": 5,
+                    "providence": -1
                 }
             }
         ]
     },
     {
         "type": "Dream",
-        "name": "Gate of dreams",
+        "name": "Gate of Dreams",
         "description": "You stand before the Gate of Dreams. The two guardians, Thog and Thok, ask you questions to determine whether you are worthy of passage.",
         "imageUrl": "",
-        "movement": 2,
+        "movement": 0,
         "choices": [
             {
                 "description": "Answer truthfully",
@@ -117,15 +119,12 @@
                     "slumber": -5
                 },
                 "success": {
-                    "movement": 5,
+                    "movement": 7,
                     "lucidity": 1
                 }
             },
             {
-                "description": "Stay silent",
-                "success": {
-                    "movement": -2
-                }
+                "description": "Stay silent"
             }
         ]
     },
@@ -139,7 +138,7 @@
             {
                 "description": "Face the nightmares",
                 "requirement": {
-                    "dice": 0,
+                    "dice": "lucidity",
                     "slumber": -3
                 },
                 "success": {
@@ -147,8 +146,8 @@
                     "providence": 3
                 },
                 "failure": {
-                    "movement": -2,
                     "lucidity": -1,
+                    "movement": -2,
                     "slumber": -2
                 }
             },
@@ -162,14 +161,14 @@
     },
     {
         "type": "Dream",
-        "name": "Strange mushrooms",
+        "name": "Strange Mushrooms",
         "description": "Starving, you decide to eat the blue shining mushrooms found on the forest floor.",
         "imageUrl": "",
         "movement": 4,
         "choices": [
-                {
+            {
                 "requirement": {
-                    "dice": 0
+                    "dice": "lucidity"
                 },
                 "failure": {
                     "movement": -3,
@@ -180,7 +179,7 @@
     },
     {
         "type": "Dream",
-        "name": "Celestial music",
+        "name": "Celestial Music",
         "description": "You overhear the most wondrous harp music, filling the air around you.",
         "imageUrl": "",
         "movement": 4,
@@ -188,11 +187,12 @@
             {
                 "description": "Follow the music",
                 "requirement": {
-                    "dice": 0
+                    "dice": "lucidity"
                 },
                 "success": {
-                    "movement": 2,
-                    "providence": 2
+                    "movement": -2,
+                    "providence": 2,
+                    "slumber": 3
                 },
                 "failure": {
                     "movement": -2
@@ -205,38 +205,36 @@
     },
     {
         "type": "Dream",
-        "name": "Nightmare monster",
+        "name": "Nightmare Monster",
         "description": "You see a nightmarish abomination devouring a carcass in the middle of the road.",
         "imageUrl": "",
-        "movement": 7,
+        "movement": 2,
         "choices": [
             {
                 "description": "Fight the monster",
                 "requirement": {
                     "slumber": -5,
-                    "dice": 0
+                    "dice": "lucidity"
                 },
                 "success": {
+                    "movement": 5,
                     "providence": 3
                 },
                 "failure": {
-                    "providence": -2,
                     "lucidity": -1,
-                    "slumber": -3,
-                    "movement": -6
+                    "movement": -1,
+                    "providence": -2,
+                    "slumber": -3
                 }
             },
             {
-                "description": "Find a different path",
-                "success": {
-                    "movement": 2
-                }
+                "description": "Find a different path"
             }
         ]
     },
     {
         "type": "Dream",
-        "name": "Realistic dream",
+        "name": "Lucid Dream",
         "description": "You walk around familiar streets in your home city. You know this is a dream but somehow, you feel at home.",
         "imageUrl": "",
         "movement": 4,
@@ -254,7 +252,7 @@
             {
                 "description": "You try to mount a mustang and use it for quick travel.",
                 "requirement": {
-                    "dice": 0,
+                    "dice": "lucidity",
                     "providence": -1,
                     "slumber": -2
                 },
@@ -262,8 +260,8 @@
                     "movement": 6
                 },
                 "failure": {
-                    "slumber": -4,
-                    "providence": -2
+                    "providence": -2,
+                    "slumber": -4
                 }
             },
             {
@@ -273,7 +271,7 @@
     },
     {
         "type": "Dream",
-        "name": "Native village",
+        "name": "Native Village",
         "description": "You encounter a village of native people living peacefully, in harmony with nature.",
         "imageUrl": "",
         "movement": 3,
@@ -281,19 +279,19 @@
             {
                 "description": "You choose to live with the natives for a while. Centuries pass, yet in the real world, it seems as if no time had passed at all.",
                 "success": {
-                    "providence": 3,
                     "movement": -3,
-                    "slumber": -3
+                    "providence": 3,
+                    "slumber": -4
                 }
             },
             {
-                "description": "You continue on your journey."
+                "descrpition": "You continue on your journey."
             }
         ]
     },
     {
         "type": "Dream",
-        "name": "Crow formation",
+        "name": "Crow Formation",
         "description": "You see a strange sign formed by the flock of crows flying overhead.",
         "imageUrl": "",
         "movement": 3,
@@ -301,16 +299,17 @@
             {
                 "description": "You try to figure out the sign and follow the crows for a while.",
                 "requirement": {
-                    "dice": 0
+                    "dice": "lucidity"
                 },
                 "success": {
-                    "providence": 2,
-                    "movement": 2
+                    "lucidity": 1,
+                    "movement": -2,
+                    "providence": 2
                 },
                 "failure": {
-                    "slumber": -5,
-                    "movement": -2,
-                    "providence": -1
+                    "movement": -1,
+                    "providence": -1,
+                    "slumber": -5
                 }
             },
             {
@@ -320,7 +319,7 @@
     },
     {
         "type": "Reality",
-        "name": "Early hours",
+        "name": "Early Hours",
         "description": "You have to wake up for work early tomorrow, and therefore can't get much sleep.",
         "imageUrl": "",
         "effect": {
@@ -329,7 +328,7 @@
     },
     {
         "type": "Reality",
-        "name": "Accident witness",
+        "name": "Accident Witness",
         "description": "You have witnessed a gruesome traffic accident, and are haunted by the images.",
         "imageUrl": "",
         "effect": {
@@ -364,14 +363,14 @@
     {
         "type": "Character",
         "name": "John Snyder",
-        "profession": "Blue collar worker",
+        "profession": "Blue Collar Worker",
         "description": "John has worked at the docks for the greater part of his adult life. Between the long hours and his family, he doesn't get much sleep. Nevertheless, he is a very experienced dreamer. John had entered the land of Dream physically for the first time when he was around six and wandered into a portal in a magical forest. He managed to return, but every night, John had retreated back to relive his fantasies.",
         "imageUrl": "",
         "stats": {
             "memory": 4,
             "slumber": 11,
             "lucidity": 4,
-            "providence": 0 
+            "providence": 0
         }
     },
     {

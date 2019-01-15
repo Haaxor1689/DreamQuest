@@ -1,5 +1,5 @@
 export interface Stats {
-    dice?: number;
+    dice?: number | "lucidity";
     movement?: number;
     memory?: number;
     slumber?: number;

@@ -1,12 +1,13 @@
 import * as React from 'react';
 
 import { Card } from 'src/Models/Cards';
-import { getCards } from 'src/Helpers/CardsRetriever';
 
 import CharacterCardComponent from "./CharacterCardComponent";
 import RealityCardComponent from './RealityCardComponent';
 import DreamCardComponent from './DreamCardComponent';
 import BossCardComponent from './BossCardComponent';
+
+import CardsJSON from './../Data/Cards.json';
 
 interface IAppState {
     cards: Card[]
@@ -14,15 +15,7 @@ interface IAppState {
 
 export default class App extends React.Component<{}, IAppState> {
     public state: IAppState = {
-        cards: [],
-    }
-
-    componentDidMount = async () => {
-        const cards = await getCards();
-        this.setState((prevState) => ({
-            ...prevState,
-            cards,
-        }))
+        cards: CardsJSON as Card[],
     }
 
     public render = () => (
