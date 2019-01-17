@@ -6,5 +6,5 @@ import BaseCardComponent from './BaseCardComponent';
 
 export default class CharacterCardComponent extends React.Component<CharacterCard, {}> {
     private renderBody = (): JSX.Element => <StatsComponent stats={this.props.stats} />
-    public render = () => <BaseCardComponent card={this.props} body={this.renderBody()} />
+    public render = () => <BaseCardComponent card={this.props} backgroundClass="card-body-real" body={this.renderBody()} />
 }

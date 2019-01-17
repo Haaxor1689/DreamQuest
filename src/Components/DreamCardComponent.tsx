@@ -27,5 +27,5 @@ export default class DreamCardComponent extends React.Component<DreamCard, {}> {
         </div>
     )
 
-    public render = () => <BaseCardComponent card={this.props} body={this.renderBody()} />
+    public render = () => <BaseCardComponent card={this.props} backgroundClass="card-body-dream" body={this.renderBody()} />
 }

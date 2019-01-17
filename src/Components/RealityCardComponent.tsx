@@ -14,5 +14,5 @@ export default class RealityCardComponent extends React.Component<RealityCard, {
         </div>
     )
 
-    public render = () => <BaseCardComponent card={this.props} body={this.renderBody()} />
+    public render = () => <BaseCardComponent card={this.props} backgroundClass="card-body-real" body={this.renderBody()} />
 }

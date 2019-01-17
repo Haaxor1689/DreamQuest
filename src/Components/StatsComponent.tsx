@@ -15,7 +15,7 @@ interface IStatsProps {
 }
 
 export default class StatsComponent extends React.Component<IStatsProps, {}> {
-    private val = (value: number): string => (value > 0 ? "+" : "") + value;
+    private val = (value: number): string => (value > 0 && this.props.isReward ? "+" : "") + value;
 
     private renderStat = (value: string, icon: string): JSX.Element => (
         <div className="card-stat">

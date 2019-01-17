@@ -22,8 +22,15 @@
     width: 480px;
     height: 672px;
     padding: 224px 24px 0px 24px;
-    background: url("./Assets/RealCard.png") no-repeat;
     background-size: 100%;
+}
+
+.card-body-real {
+    background: url("./Assets/RealCard.png") no-repeat;
+}
+
+.card-body-dream {
+    background: url("./Assets/DreamCard.png") no-repeat;
 }
 
 .card-movement {
@@ -58,6 +65,7 @@
 
 .card-stat {
     font-family: 'Cthulhumbus';
+    font-size: 20px;
     display: inline-block;
     margin-right: 6px;
 }
