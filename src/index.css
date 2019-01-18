@@ -3,6 +3,10 @@
     src: url('./Fonts/JMHCthulhumbusArcadeUGalt1.woff') format('woff');
 }
 
+* {
+    image-rendering: pixelated;
+}
+
 .card-base {
     font-size: 16px;
     width: 480px;
@@ -27,10 +31,12 @@
 
 .card-body-real {
     background: url("./Assets/RealCard.png") no-repeat;
+    background-size: cover;
 }
 
 .card-body-dream {
     background: url("./Assets/DreamCard.png") no-repeat;
+    background-size: cover;
 }
 
 .card-movement {
