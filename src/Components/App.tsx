@@ -31,7 +31,6 @@ export default class App extends React.Component<{}, IAppState> {
                             default: return <div></div>;
                         }
                     })}
-                    
                 </div>
             </div>
         </main>

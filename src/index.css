@@ -79,3 +79,9 @@
 .card-stat-value {
     margin-right: 4px;
 }
+
+@media print {
+    .row {
+        page-break-inside: avoid;
+    }
+}
