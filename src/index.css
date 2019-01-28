@@ -7,6 +7,10 @@
     image-rendering: pixelated;
 }
 
+body {
+    font-weight: 600;
+}
+
 .card-base {
     font-size: 16px;
     width: 480px;
@@ -29,16 +33,6 @@
     background-size: 100%;
 }
 
-.card-body-real {
-    background: url("./Assets/RealCard.png") no-repeat;
-    background-size: cover;
-}
-
-.card-body-dream {
-    background: url("./Assets/DreamCard.png") no-repeat;
-    background-size: cover;
-}
-
 .card-movement {
     font-family: 'Cthulhumbus';
     position: absolute;
@@ -46,8 +40,9 @@
     left: 50%;
     width: 112px;
     margin-left: -56px;
-    text-align: center;
     font-size: 104px;
+    text-align: center;
+    font-weight: 400;
 }
 
 .card-title {
@@ -56,6 +51,7 @@
     margin: 56px 0 24px 0;
     font-size: 32px;
     text-align: center;
+    font-weight: 400;
 }
 
 .card-description {
@@ -69,15 +65,53 @@
     display: inline-block;
 }
 
+.card-body-real .card-stats {
+    display: block;
+    text-align: center;
+}
+
 .card-stat {
     font-family: 'Cthulhumbus';
     font-size: 20px;
     display: inline-block;
     margin-right: 6px;
+    font-weight: 400;
 }
 
 .card-stat-value {
     margin-right: 4px;
+}
+
+/* RealCard specific */
+.card-body-real {
+    background: url("./Assets/RealCard.png") no-repeat;
+    background-size: cover;
+    padding: 224px 32px 0px 32px;
+}
+
+.card-body-real .card-stat {
+    font-size: 40px;
+    margin-right: 24px;
+}
+
+.card-body-real .card-stat-icon {
+    height: 40px;
+}
+
+.card-body-real hr {
+    height: 4px;
+    background-color: black;
+}
+
+
+.card-body-real .card-stat-value {
+    margin-right: 8px;
+}
+
+/* DreamCard specific */
+.card-body-dream {
+    background: url("./Assets/DreamCard.png") no-repeat;
+    background-size: cover;
 }
 
 @media print {

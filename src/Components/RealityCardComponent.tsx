@@ -8,7 +8,7 @@ export default class RealityCardComponent extends React.Component<RealityCard, {
     private renderBody = (): JSX.Element => (
         <div className="row">
             <div className="col">
-                <hr/>
+                <hr />
                 <StatsComponent stats={this.props.effect} />
             </div>
         </div>

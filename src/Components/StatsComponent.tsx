@@ -20,22 +20,22 @@ export default class StatsComponent extends React.Component<IStatsProps, {}> {
     private renderStat = (value: string, icon: string): JSX.Element => (
         <div className="card-stat">
             <span className="card-stat-value">{value}</span>
-            <img src={icon} />
+            <img src={icon} className="card-stat-icon" />
         </div>
     )
 
     private renderStatPlus = (value: number, icon: string) => (
         <div className="card-stat">
             <span className="card-stat-value">{Math.abs(value) + (value < 0 ? "-" : "+")}</span>
-            <img src={icon} />
+            <img src={icon} className="card-stat-icon" />
         </div>
     )
 
     private renderDiceLucidity = (): JSX.Element => (
         <div className="card-stat">
-            <img src={DiceIcon} />
+            <img src={DiceIcon} className="card-stat-icon" />
             <span className="card-stat-value">{" >"}</span>
-            <img src={LucidityIcon} />
+            <img src={LucidityIcon} className="card-stat-icon" />
         </div>
     )
     
