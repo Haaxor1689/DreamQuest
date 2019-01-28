@@ -1,389 +1,939 @@
-[
-    {
-        "type": "Character",
-        "name": "Jannie",
-        "description": "Jannie was gut, she was here, she did stuff",
-        "imageUrl": "",
-        "stats": {
-            "memory": 5,
-            "slumber": 10,
-            "lucidity": 4,
-            "providence": -2
-        }
-    },
-    {
-        "type": "Reality",
-        "name": "Reality card",
-        "description": "Description description",
-        "imageUrl": "",
-        "effect": {
+{
+    "cards": [
+        {
+            "type": "Reality",
+            "name": "Early Hours",
+            "description": "You have to wake up for work early tomorrow, and therefore can't get much sleep.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -5
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Accident Witness",
+            "description": "You have witnessed a gruesome traffic accident, and are haunted by the images.",
+            "imageUrl": "",
+            "effect": {
+                "lucidity": -1,
+                "slumber": -2
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Jet Lag",
+            "description": "After traveling a long distance, you have trouble staying awake but are unable to fall asleep.",
+            "imageUrl": "",
+            "effect": {
+                "memory": -1,
+                "slumber": -2
+            }
+        },
+        {
+            "type": "Dream",
+            "name": "Great Library",
+            "description": "You arrive upon a library cataloguing all the dreams ever dreamt by humans.",
+            "imageUrl": "",
+            "movement": 2,
+            "choices": [
+                {
+                    "description": "Read the library",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 1,
+                        "providence": 2,
+                        "slumber": 2
+                    },
+                    "failure": {
+                        "movement": -2,
+                        "providence": -1,
+                        "slumber": -3
+                    }
+                },
+                {
+                    "description": "Continue the journey"
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Tax Recounting",
+            "description": "The villagers have all forgotten how to count. They see you are not of this world, and ask you to help count their local treasury.",
+            "imageUrl": "",
+            "movement": 0,
+            "choices": [
+                {
+                    "description": "Count the treasury thoroughly",
+                    "requirement": {
+                        "slumber": -3
+                    },
+                    "success": {
+                        "providence": 3
+                    }
+                },
+                {
+                    "description": "Steal from the treasury",
+                    "success": {
+                        "movement": 5,
+                        "providence": -1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Gate of Dreams",
+            "description": "You stand before the Gate of Dreams. The two guardians, Thog and Thok, ask you questions to determine whether you are worthy of passage.",
+            "imageUrl": "",
+            "movement": 0,
+            "choices": [
+                {
+                    "description": "Answer truthfully",
+                    "requirement": {
+                        "providence": -3,
+                        "slumber": -5
+                    },
+                    "success": {
+                        "movement": 7,
+                        "lucidity": 1
+                    }
+                },
+                {
+                    "description": "Stay silent"
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Cave of Visions",
+            "description": "You enter a cave that is home to the forgotten nightmares of humanity.",
+            "imageUrl": "",
+            "movement": 2,
+            "choices": [
+                {
+                    "description": "Face the nightmares",
+                    "requirement": {
+                        "dice": "lucidity",
+                        "slumber": -3
+                    },
+                    "success": {
+                        "movement": 3,
+                        "providence": 3
+                    },
+                    "failure": {
+                        "lucidity": -1,
+                        "movement": -2,
+                        "slumber": -2
+                    }
+                },
+                {
+                    "description": "Cower in fear",
+                    "requirement": {
+                        "slumber": -3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Strange Mushrooms",
+            "description": "Starving, you decide to eat the blue shining mushrooms found on the forest floor.",
+            "imageUrl": "",
+            "movement": 4,
+            "choices": [
+                {
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "failure": {
+                        "movement": -3,
+                        "slumber": -2
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Celestial Music",
+            "description": "You overhear the most wondrous harp music, filling the air around you.",
+            "imageUrl": "",
+            "movement": 4,
+            "choices": [
+                {
+                    "description": "Follow the music",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": -2,
+                        "providence": 2,
+                        "slumber": 3
+                    },
+                    "failure": {
+                        "movement": -2
+                    }
+                },
+                {
+                    "description": "Continue your journey"
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Nightmare Monster",
+            "description": "You see a nightmarish abomination devouring a carcass in the middle of the road.",
+            "imageUrl": "",
+            "movement": 2,
+            "choices": [
+                {
+                    "description": "Fight the monster",
+                    "requirement": {
+                        "slumber": -5,
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 5,
+                        "providence": 3
+                    },
+                    "failure": {
+                        "lucidity": -1,
+                        "movement": -1,
+                        "providence": -2,
+                        "slumber": -3
+                    }
+                },
+                {
+                    "description": "Find a different path"
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Lucid Dream",
+            "description": "You walk around familiar streets in your home city. You know this is a dream but somehow, you feel at home.",
+            "imageUrl": "",
+            "movement": 4,
+            "effect": {
+                "lucidity": 1
+            }
+        },
+        {
+            "type": "Dream",
+            "name": "Stampede",
+            "description": "A stampede of Mustangs from the plains near Dylath-Leen is closing in. You can hear the ground tremble as a thousand hooves approach.",
+            "imageUrl": "",
             "movement": 1,
-            "providence": 2
+            "choices": [
+                {
+                    "description": "You try to mount a mustang and use it for quick travel.",
+                    "requirement": {
+                        "dice": "lucidity",
+                        "providence": -1,
+                        "slumber": -2
+                    },
+                    "success": {
+                        "movement": 6
+                    },
+                    "failure": {
+                        "providence": -2,
+                        "slumber": -4
+                    }
+                },
+                {
+                    "description": "You climb a nearby tree to wait out the stampede."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Native Village",
+            "description": "You encounter a village of native people living peacefully, in harmony with nature.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "You choose to live with the natives for a while. Centuries pass, yet in the real world, it seems as if no time had passed at all.",
+                    "success": {
+                        "movement": -3,
+                        "providence": 3,
+                        "slumber": -4
+                    }
+                },
+                {
+                    "descrpition": "You continue on your journey."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Crow Formation",
+            "description": "You see a strange sign formed by the flock of crows flying overhead.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "You try to figure out the sign and follow the crows for a while.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "lucidity": 1,
+                        "movement": -2,
+                        "providence": 2
+                    },
+                    "failure": {
+                        "movement": -1,
+                        "providence": -1,
+                        "slumber": -5
+                    }
+                },
+                {
+                    "description": "You decide to ignore the crows and continue on your journey."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Sleeping Ward",
+            "description": "You find a hospital where people who have difficulty sleeping can find a moment to rest.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "You stay here a while and use the hospital.",
+                    "requirement": {
+                        "movement": -3
+                    },
+                    "success": {
+                        "slumber": "+dice"
+                    }
+                },
+                {
+                    "description": "You continue your journey."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Old Hermit",
+            "description": "You meet an old hermit sitting by the road. He asks you to stay and listen to his tale.",
+            "imageUrl": "",
+            "movement": 4,
+            "choices": [
+                {
+                    "description": "Stay and listen to the old man's tale.",
+                    "success": {
+                        "movement": -4,
+                        "providence": 1,
+                        "slumber": 3
+                    }
+                },
+                {
+                    "description": "Leave the old man alone.",
+                    "success": {
+                        "slumber": -2
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Moon Kite",
+            "description": "You see a boy flying a kite. You look closer and notice the kite is the Moon. Passing over the heavens, the boy controls night and day in this way.",
+            "imageUrl": "",
+            "movement": 5,
+            "choices": [
+                {
+                    "description": "Stop the boy from messing with time.",
+                    "success": {
+                        "slumber": 5,
+                        "providence": -1,
+                        "movement": -5
+                    }
+                },
+                {
+                    "description": "Let the boy play",
+                    "success": {
+                        "slumber": -5,
+                        "providence": 1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "The White Ship",
+            "description": "A radiant marble white ship appears over the horizon and approaches you. Its captain offers to take you to far away lands, if you are ready to see them.",
+            "imageUrl": "",
+            "movement": 0,
+            "choices": [
+                {
+                    "description": "Take the test.",
+                    "requirement": {
+                        "dice": "lucidity",
+                        "providence": -1
+                    },
+                    "success": {
+                        "movement": 4,
+                        "providence": 3,
+                        "slumber": 3
+                    },
+                    "failure": {
+                        "providence": -2
+                    }
+                },
+                {
+                    "description": "Humbly deny the captain's offer.",
+                    "success": {
+                        "slumber": -3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Incoming Asteroid",
+            "description": "You see a huge asteroid heading towards the land of Dream. It could cause massive destruction if it hits.",
+            "imageUrl": "",
+            "movement": 0,
+            "choices": [
+                {
+                    "description": "Try to steer the asteroid away from the Dreamlands.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 3,
+                        "providence": 2,
+                        "slumber": 3
+                    },
+                    "failure": {
+                        "providence": -2,
+                        "slumber": -3
+                    }
+                },
+                {
+                    "description": "Find a place to hide and hope to survive.",
+                    "success": {
+                        "lucidity": -1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Zeppelin Captains",
+            "description": "The Zeppelins of Mnar are crewed by traders and adventurers who have been to every corner of Dreamlands.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Hide on the zeppelin as a stowaway",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 3
+                    },
+                    "failure": {
+                        "movement": -2,
+                        "slumber": -2
+                    }
+                },
+                {
+                    "description": "Tell the traders your tale",
+                    "requirement": {
+                        "providence": ">=7"
+                    },
+                    "success": {
+                        "movement": 3
+                    }
+                },
+                {
+                    "description": "Ignore the traders and continue on your journey."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Melting Clocks",
+            "description": "You see clocks everywhere, showing the times of deaths of people you know, and of your coming time of awakening.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "You try to rewind the clock and buy yourself more time in the Dreamlands.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "slumber": 3
+                    },
+                    "failure": {
+                        "slumber": -3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Flying Dream",
+            "description": "You find you have the ability to fly.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Use your newfound ability to fly around the world.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 4
+                    },
+                    "failure": {
+                        "movement": -2
+                    }
+                },
+                {
+                    "description": "Reject the ability and continue walking"
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "The Mirror of Desire",
+            "description": "The mirror is supposed to show you your greatest desires. Many have gotten lost in their fantasies.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "You try not to fall under the mirror's spell.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "providence": 2
+                    },
+                    "failure": {
+                        "movement": -3,
+                        "slumber": 3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "The Magus",
+            "description": "An arcane wizard grants you an audience. He offers you to teach you the practices of manipulating dreams.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Accept the offer, become the wizard's apprentice",
+                    "requirement": {
+                        "dice": "lucidity",
+                        "providence": -1
+                    },
+                    "success": {
+                        "lucidity": 1,
+                        "movement": -3,
+                        "providence": 2
+                    },
+                    "failure": {
+                        "movement": -3,
+                        "providence": -1
+                    }
+                },
+                {
+                    "description": "Reject the wizard's offer and continue on your journey."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Theatre Play",
+            "description": "You realize you are an actor backstage mere moments before the play begins. But you have no memory of what the play is about or what your lines are.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Improvise",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": -2,
+                        "providence": 2
+                    },
+                    "failure": {
+                        "movement": -2,
+                        "slumber": -3
+                    }
+                },
+                {
+                    "description": "Run Away",
+                    "success": {
+                        "lucidity": -1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Sentient Mist",
+            "description": "The mist changes its form as if in response to your thoughts. Maybe it can show you a shortcut!",
+            "imageUrl": "",
+            "movement": 2,
+            "choices": [
+                {
+                    "description": "Try to control the form of the strange mist.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 3
+                    },
+                    "failure": {
+                        "slumber": -2
+                    }
+                },
+                {
+                    "description": "Ignore the mist."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Room of Eyes",
+            "description": "The walls are made of eyes, watching your every step.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Escape the all-seeing gaze.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "providence": 1,
+                        "slumber": 3
+                    },
+                    "failure": {
+                        "movement": -3,
+                        "slumber": -3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Ancient Battle",
+            "description": "You witness an ancient battle, being played over and over again as the survivors relive the horrors in their dreams.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Join the battle and alter the course of history.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "lucidity": 1,
+                        "providence": 2
+                    },
+                    "failure": {
+                        "movement": -3,
+                        "slumber": -2
+                    }
+                },
+                {
+                    "description": "Avoid the danger and continue on your journey",
+                    "requirement": {
+                        "movement": -1,
+                        "slumber": -3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Half-time",
+            "description": "The match is coming to an end, and the score is a tie. In order to win, your team has to score that final point.",
+            "imageUrl": "",
+            "movement": 2,
+            "choices": [
+                {
+                    "description": "It is up to you to deliver your team to victory.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "providence": 1
+                    },
+                    "failure": {
+                        "slumber": -3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Pegasus",
+            "description": "You come across a mighty Pegasus, grazing on the meadow.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Try to tame the beast.",
+                    "requirement": {
+                        "dice": "lucidity",
+                        "providence": -1
+                    },
+                    "success": {
+                        "movement": 4,
+                        "providence": 2
+                    },
+                    "failure": {
+                        "movement": -1,
+                        "slumber": -4
+                    }
+                },
+                {
+                    "description": "Leave the fabulous creature in peace."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Haïta the Shepherd",
+            "description": "A shepherd is sitting on a rock, overlooking a flock of sheep. He plays melodies most wonderful on his flute, and offers to tell you a tale.",
+            "imageUrl": "",
+            "movement": 0,
+            "choices": [
+                {
+                    "description": "Listen to the shepherd's tales of Carcosa and Hastur.",
+                    "requirement": {
+                        "providence": ">5"
+                    },
+                    "success": {
+                        "lucidity": 1,
+                        "providence": 1,
+                        "slumber": -2
+                    },
+                    "failure": {
+                        "providence": 2,
+                        "slumber": -2
+                    }
+                },
+                {
+                    "description": "Humbly refuse the shepherd and continue on your journey.",
+                    "success": {
+                        "movement": 3
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "The Maiden",
+            "description": "The Sun is overshadowed by a radiant maiden named Happiness. She offers you a new life in the lands forgotten.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Resist the maiden and continue on your journey",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": -3,
+                        "providence": 2,
+                        "slumber": 5
+                    },
+                    "failure": {
+                        "movement": -1,
+                        "providence": 2,
+                        "slumber": -2
+                    }
+                },
+                {
+                    "description": "Embrace the maiden whose name is Happiness",
+                    "success": {
+                        "lucidity": -1,
+                        "slumber": 5
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "Shrine of the Elder Gods",
+            "description": "You have stumbled upon an abandoned shrine of the forgotten gods of humanity. They can be as malevolent as they can be helpful.",
+            "imageUrl": "",
+            "movement": 3,
+            "choices": [
+                {
+                    "description": "Say a prayer to the gods.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "lucidity": 1,
+                        "providence": 4,
+                        "slumber": 3
+                    },
+                    "failure": {
+                        "lucidity": -1,
+                        "movement": -1,
+                        "providence": -1,
+                        "slumber": -5
+                    }
+                },
+                {
+                    "description": "Acknowledge the shrine in piety but continue on your journey."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "The Puzzle Box",
+            "description": "You are convinced that the box can only be open by the wielder of the Silver Key.",
+            "imageUrl": "",
+            "movement": 2,
+            "choices": [
+                {
+                    "description": "Try to find the key.",
+                    "requirement": {
+                        "dice": "lucidity"
+                    },
+                    "success": {
+                        "movement": 4
+                    },
+                    "failure": {
+                        "slumber": -3
+                    }
+                },
+                {
+                    "description": "Try to open the box yourself.",
+                    "requirement": {
+                        "providence": -3
+                    },
+                    "success": {
+                        "movement": 5
+                    }
+                },
+                {
+                    "description": "leave the box alone."
+                }
+            ]
+        },
+        {
+            "type": "Dream",
+            "name": "The Lake of Hali",
+            "description": "Over the shore the cloud waves break, you glimpse Carcosa tween the twin moons and the lake.",
+            "imageUrl": "",
+            "movement": 0,
+            "effect": {
+                "lucidity": -1,
+                "slumber": 7
+            }
+        },
+        {
+            "type": "Dream",
+            "name": "Friendly Zoog",
+            "description": "You meet a friendly cat-like creature with strange feeler tentacles in place of its snout.You try to run away from it, but the Zoog follows you anywhere. It seems you have made a friend.",
+            "imageUrl": "",
+            "movement": 3,
+            "effect": {
+                "lucidity": 1,
+                "slumber": 1
+            }
+        },
+        {
+            "type": "Character",
+            "name": "Professor Warren Bedford",
+            "profession": "Academic",
+            "special ability": "",
+            "description": "A professor of ethnology at the university, Bedford has read much about the land of dreams, but naturally rejected it as fantasy. Until one day, he was visited by the ghost of his long deceased grandfather, and was brought to the land of Dream to help prevent the incoming catastrophe.",
+            "imageUrl": "",
+            "stats": {
+                "memory": 2,
+                "slumber": 8,
+                "lucidity": 4,
+                "providence": 0
+            }
+        },
+        {
+            "type": "Character",
+            "name": "John Snyder",
+            "profession": "Blue Collar Worker",
+            "special ability": "",
+            "description": "John has worked at the docks for the greater part of his adult life. Between the long hours and his family, he doesn't get much sleep. Nevertheless, he is a very experienced dreamer. John had entered the land of Dream physically for the first time when he was around six and wandered into a portal in a magical forest. He managed to return, but every night, John had retreated back to relive his fantasies.",
+            "imageUrl": "",
+            "stats": {
+                "memory": 3,
+                "slumber": 6,
+                "lucidity": 5,
+                "providence": 0
+            }
+        },
+        {
+            "type": "Character",
+            "name": "Coiled Serpent",
+            "profession": "Shaman",
+            "special ability": "Walking Between the Worlds: Coiled Serpent begins the game with her dream avatar active and her real avatar inactive.",
+            "description": "Serpent had grown up in a tribal society, being raised to become the next shaman and visionary for the tribe. But her family wanted a better life for her, and so they moved to a big city to raise Serpent in a modern way. Serpent has successfully integrated into society, but has not lost contact with her origins, often visiting her home tribe and practising the age-old traditions of traveling between worlds that she has been taught.",
+            "imageUrl": "",
+            "stats": {
+                "memory": 4,
+                "slumber": 9,
+                "lucidity": 5,
+                "providence": 0
+            }
+        },
+        {
+            "type": "Character",
+            "name": "Amanda Blunt",
+            "profession": "Student",
+            "special ability": "",
+            "description": "Amanda is a young, curious student of psychology. In her studies, she has read much about the Dreamlands. She is not sure if the studies are for her, as she finds more satisfaction in exploring the worlds that she believes are within her head, than in understanding the heads of others.",
+            "imageUrl": "",
+            "stats": {
+                "memory": 3,
+                "slumber": 11,
+                "lucidity": 4,
+                "providence": 0
+            }
+        },
+        {
+            "type": "Character",
+            "name": "Gloria Silverlake",
+            "profession": "Occult Writer",
+            "special ability": "",
+            "description": "Gloria has been putting her nightly visits to the land of Dream on paper for decades now. Her newest bestseller introduced a great danger, a villain, into the fantasy realms. But then she realized that her creations are actually more real than she thought, and that it was up to her to save her dreamt up world from oblivion.",
+            "imageUrl": "",
+            "stats": {
+                "memory": 4,
+                "slumber": 8,
+                "lucidity": 4,
+                "providence": 1
+            }
+        },
+        {
+            "type": "Character",
+            "name": "Trent Maypole",
+            "profession": "Child",
+            "special ability": "",
+            "description": "Trent doesn't like to play in the sandbox or with his toys much. He was always a very sleepy child. The lands of Dream provided him with all the toys and excitement a young boy could want.",
+            "imageUrl": "",
+            "stats": {
+                "memory": 2,
+                "slumber": 12,
+                "lucidity": 3,
+                "providence": 0
+            }
         }
-    },
-    {
-        "type": "Dream",
-        "name": "Dream card test",
-        "description": "Description description",
-        "imageUrl": "",
-        "movement": 0,
-        "choices": [
-            {
-                "description": "Option one",
-                "requirement": {
-                    "dice": 4
-                },
-                "success": {
-                    "movement": 1,
-                    "providence": 2
-                }
-            },
-            {
-                "description": "Option two",
-                "success": {
-                    "slumber": 2
-                }
-            }
-        ]
-    },
-    {
-        "type": "Boss",
-        "name": "Boss card tes",
-        "description": "Description description",
-        "imageUrl": ""
-    },
-    {
-        "type": "Dream",
-        "name": "Great Library",
-        "description": "You arrive upon a library cataloguing all the dreams ever dreamt by humans.",
-        "imageUrl": "",
-        "movement": 2,
-        "choices": [
-            {
-                "description": "Read the library",
-                "requirement": {
-                    "dice": "lucidity"
-                },
-                "success": {
-                    "movement": 1,
-                    "providence": 2,
-                    "slumber": 2
-                },
-                "failure": {
-                    "movement": -2,
-                    "providence": -1,
-                    "slumber": -3
-                }
-            },
-            {
-                "description": "Continue the journey"
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Tax Recounting",
-        "description": "The villagers have all forgotten how to count. They see you are not of this world, and ask you to help count their local treasury.",
-        "imageUrl": "",
-        "movement": 0,
-        "choices": [
-            {
-                "description": "Count the treasury thoroughly",
-                "requirement": {
-                    "slumber": -3
-                },
-                "success": {
-                    "providence": 3
-                }
-            },
-            {
-                "description": "Steal from the treasury",
-                "success": {
-                    "movement": 5,
-                    "providence": -1
-                }
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Gate of Dreams",
-        "description": "You stand before the Gate of Dreams. The two guardians, Thog and Thok, ask you questions to determine whether you are worthy of passage.",
-        "imageUrl": "",
-        "movement": 0,
-        "choices": [
-            {
-                "description": "Answer truthfully",
-                "requirement": {
-                    "providence": -3,
-                    "slumber": -5
-                },
-                "success": {
-                    "movement": 7,
-                    "lucidity": 1
-                }
-            },
-            {
-                "description": "Stay silent"
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Cave of Visions",
-        "description": "You enter a cave that is home to the forgotten nightmares of humanity.",
-        "imageUrl": "",
-        "movement": 2,
-        "choices": [
-            {
-                "description": "Face the nightmares",
-                "requirement": {
-                    "dice": "lucidity",
-                    "slumber": -3
-                },
-                "success": {
-                    "movement": 3,
-                    "providence": 3
-                },
-                "failure": {
-                    "lucidity": -1,
-                    "movement": -2,
-                    "slumber": -2
-                }
-            },
-            {
-                "description": "Cower in fear",
-                "requirement": {
-                    "slumber": -3
-                }
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Strange Mushrooms",
-        "description": "Starving, you decide to eat the blue shining mushrooms found on the forest floor.",
-        "imageUrl": "",
-        "movement": 4,
-        "choices": [
-            {
-                "requirement": {
-                    "dice": "lucidity"
-                },
-                "failure": {
-                    "movement": -3,
-                    "slumber": -2
-                }
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Celestial Music",
-        "description": "You overhear the most wondrous harp music, filling the air around you.",
-        "imageUrl": "",
-        "movement": 4,
-        "choices": [
-            {
-                "description": "Follow the music",
-                "requirement": {
-                    "dice": "lucidity"
-                },
-                "success": {
-                    "movement": -2,
-                    "providence": 2,
-                    "slumber": 3
-                },
-                "failure": {
-                    "movement": -2
-                }
-            },
-            {
-                "description": "Continue your journey"
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Nightmare Monster",
-        "description": "You see a nightmarish abomination devouring a carcass in the middle of the road.",
-        "imageUrl": "",
-        "movement": 2,
-        "choices": [
-            {
-                "description": "Fight the monster",
-                "requirement": {
-                    "slumber": -5,
-                    "dice": "lucidity"
-                },
-                "success": {
-                    "movement": 5,
-                    "providence": 3
-                },
-                "failure": {
-                    "lucidity": -1,
-                    "movement": -1,
-                    "providence": -2,
-                    "slumber": -3
-                }
-            },
-            {
-                "description": "Find a different path"
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Lucid Dream",
-        "description": "You walk around familiar streets in your home city. You know this is a dream but somehow, you feel at home.",
-        "imageUrl": "",
-        "movement": 4,
-        "effect": {
-            "lucidity": 1
-        }
-    },
-    {
-        "type": "Dream",
-        "name": "Stampede",
-        "description": "A stampede of Mustangs from the plains near Dylath-Leen is closing in. You can hear the ground tremble as a thousand hooves approach.",
-        "imageUrl": "",
-        "movement": 1,
-        "choices": [
-            {
-                "description": "You try to mount a mustang and use it for quick travel.",
-                "requirement": {
-                    "dice": "lucidity",
-                    "providence": -1,
-                    "slumber": -2
-                },
-                "success": {
-                    "movement": 6
-                },
-                "failure": {
-                    "providence": -2,
-                    "slumber": -4
-                }
-            },
-            {
-                "description": "You climb a nearby tree to wait out the stampede."
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Native Village",
-        "description": "You encounter a village of native people living peacefully, in harmony with nature.",
-        "imageUrl": "",
-        "movement": 3,
-        "choices": [
-            {
-                "description": "You choose to live with the natives for a while. Centuries pass, yet in the real world, it seems as if no time had passed at all.",
-                "success": {
-                    "movement": -3,
-                    "providence": 3,
-                    "slumber": -4
-                }
-            },
-            {
-                "description": "You continue on your journey."
-            }
-        ]
-    },
-    {
-        "type": "Dream",
-        "name": "Crow Formation",
-        "description": "You see a strange sign formed by the flock of crows flying overhead.",
-        "imageUrl": "",
-        "movement": 3,
-        "choices": [
-            {
-                "description": "You try to figure out the sign and follow the crows for a while.",
-                "requirement": {
-                    "dice": "lucidity"
-                },
-                "success": {
-                    "lucidity": 1,
-                    "movement": -2,
-                    "providence": 2
-                },
-                "failure": {
-                    "movement": -1,
-                    "providence": -1,
-                    "slumber": -5
-                }
-            },
-            {
-                "description": "You decide to ignore the crows and continue on your journey."
-            }
-        ]
-    },
-    {
-        "type": "Reality",
-        "name": "Early Hours",
-        "description": "You have to wake up for work early tomorrow, and therefore can't get much sleep.",
-        "imageUrl": "",
-        "effect": {
-            "slumber": -5
-        }
-    },
-    {
-        "type": "Reality",
-        "name": "Accident Witness",
-        "description": "You have witnessed a gruesome traffic accident, and are haunted by the images.",
-        "imageUrl": "",
-        "effect": {
-            "lucidity": -1,
-            "slumber": -2
-        }
-    },
-    {
-        "type": "Reality",
-        "name": "Jet Lag",
-        "description": "After traveling a long distance, you have trouble staying awake but are unable to fall asleep.",
-        "imageUrl": "",
-        "effect": {
-            "memory": -1,
-            "slumber": -2
-        }
-    },
-    {
-        "type": "Character",
-        "name": "Professor Warren Bedford",
-        "profession": "Academic",
-        "special ability": "",
-        "description": "A professor of ethnology at the university, Bedford has read much about the land of dreams, but naturally rejected it as fantasy. Until one day, he was visited by the ghost of his long deceased grandfather, and was brought to the land of Dream to help prevent the incoming catastrophe.",
-        "imageUrl": "",
-        "stats": {
-            "memory": 2,
-            "slumber": 8,
-            "lucidity": 4,
-            "providence": 0
-        }
-    },
-    {
-        "type": "Character",
-        "name": "John Snyder",
-        "profession": "Blue Collar Worker",
-        "description": "John has worked at the docks for the greater part of his adult life. Between the long hours and his family, he doesn't get much sleep. Nevertheless, he is a very experienced dreamer. John had entered the land of Dream physically for the first time when he was around six and wandered into a portal in a magical forest. He managed to return, but every night, John had retreated back to relive his fantasies.",
-        "imageUrl": "",
-        "stats": {
-            "memory": 4,
-            "slumber": 11,
-            "lucidity": 4,
-            "providence": 0
-        }
-    },
-    {
-        "type": "Character",
-        "name": "Coiled Serpent",
-        "profession": "Shaman",
-        "description": "Serpent had grown up in a tribal society, being raised to become the next shaman and visionary for the tribe. But her family wanted a better life for her, and so they moved to a big city to raise Serpent in a modern way. Serpent has successfully integrated into society, but has not lost contact with her origins, often visiting her home tribe and practising the age-old traditions of traveling between worlds that she has been taught.",
-        "imageUrl": "",
-        "stats": {
-            "memory": 4,
-            "slumber": 9,
-            "lucidity": 3,
-            "providence": 0
-        }
-    }
-]
+    ]
+}

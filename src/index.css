@@ -65,21 +65,40 @@ body {
     display: inline-block;
 }
 
-.card-body-real .card-stats {
-    display: block;
-    text-align: center;
-}
-
 .card-stat {
     font-family: 'Cthulhumbus';
     font-size: 20px;
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 12px;
     font-weight: 400;
 }
 
 .card-stat-value {
-    margin-right: 4px;
+    margin-right: 2px;
+}
+
+.card-stat-icon {
+    margin: -2px 0 2px 0;
+}
+
+.card-choice-requirement {
+    background: url("./Assets/RequirementStripe.png") no-repeat;
+}
+
+.card-choice-reward {
+    background: url("./Assets/RewardStripe.png") no-repeat;
+}
+
+.card-choice-failure {
+    background: url("./Assets/FailureStripe.png") no-repeat;
+}
+
+.card-choice {
+    text-align: center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 4px;
 }
 
 /* RealCard specific */
@@ -89,9 +108,14 @@ body {
     padding: 224px 32px 0px 32px;
 }
 
+.card-body-real .card-stats {
+    display: block;
+    text-align: center;
+}
+
 .card-body-real .card-stat {
     font-size: 40px;
-    margin-right: 24px;
+    margin-right: 48px;
 }
 
 .card-body-real .card-stat-icon {
@@ -99,10 +123,9 @@ body {
 }
 
 .card-body-real hr {
-    height: 4px;
+    height: 2px;
     background-color: black;
 }
-
 
 .card-body-real .card-stat-value {
     margin-right: 8px;

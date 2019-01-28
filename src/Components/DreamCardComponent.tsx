@@ -9,8 +9,7 @@ import ChoiceComponent from './ChoiceComponent';
 export default class DreamCardComponent extends React.Component<DreamCard, {}> {
     private renderEffect = (): JSX.Element => (
         <div className="col">
-            <span>You gain: </span>
-            <StatsComponent isReward stats={this.props.effect!} />
+            <StatsComponent isReward stats={this.props.effect!} backgroundClass="card-choice card-choice-reward" />
         </div>
     )
     

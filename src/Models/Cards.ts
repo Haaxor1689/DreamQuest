@@ -1,8 +1,3 @@
-import {
-    Stats,
-    Choice,
-} from './Models';
-
 export type CardType = "Character" | "Reality" | "Dream" | "Boss";
 
 export interface BaseCard {
@@ -10,6 +5,22 @@ export interface BaseCard {
     name: string;
     imageUrl: string;
     description: string;
+}
+
+export interface Stats {
+    dice?: number | "lucidity";
+    movement?: number;
+    memory?: number;
+    slumber?: number | "+dice";
+    lucidity?: number;
+    providence?: number | string;
+}
+
+export interface Choice {
+    description?: string;
+    requirement?: Stats;
+    success?: Stats;
+    failure?: Stats;
 }
 
 export interface CharacterCard extends BaseCard {
@@ -35,3 +46,7 @@ export interface BossCard extends BaseCard {
 }
 
 export type Card = CharacterCard | RealityCard | DreamCard | BossCard;
+
+export interface Cards {
+    cards: Card[];
+}

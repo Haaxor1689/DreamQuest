@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Stats } from 'src/Models/Models';
+import { Stats } from 'src/Models/Cards';
 
 import DiceIcon from "./../Assets/Dice.png";
 import MovementIcon from "./../Assets/Movement.png";
@@ -12,10 +12,11 @@ import ProvidenceIcon from "./../Assets/Providence.png";
 interface IStatsProps {
     isReward?: boolean,
     stats: Stats,
+    backgroundClass?: string,
 }
 
 export default class StatsComponent extends React.Component<IStatsProps, {}> {
-    private val = (value: number): string => (value > 0 && this.props.isReward ? "+" : "") + value;
+    private val = (value: number | string): string => (typeof(value) === "string" && value) || (value > 0 && this.props.isReward ? "+" : "") + value;
 
     private renderStat = (value: string, icon: string): JSX.Element => (
         <div className="card-stat">
@@ -33,14 +34,23 @@ export default class StatsComponent extends React.Component<IStatsProps, {}> {
 
     private renderDiceLucidity = (): JSX.Element => (
         <div className="card-stat">
-            <img src={DiceIcon} className="card-stat-icon" />
-            <span className="card-stat-value">{" >"}</span>
+            <img src={DiceIcon} className="card-stat-icon" style={{paddingRight: 2}} />
+            <span className="card-stat-value">{">"}</span>
             <img src={LucidityIcon} className="card-stat-icon" />
+        </div>
+    )
+
+    private renderDiceSlumber = (): JSX.Element => (
+        <div className="card-stat">
+            <span className="card-stat-value">{"+{"}
+            <img src={DiceIcon} className="card-stat-icon" />
+            {"}"}</span>
+            <img src={SlumberIcon} className="card-stat-icon" />
         </div>
     )
     
     public render = () => (
-        <div className="card-stats">
+        <div className={"card-stats " + this.props.backgroundClass}>
             { this.props.stats.dice !== undefined && (this.props.stats.dice === "lucidity" 
                 ? this.renderDiceLucidity() 
                 : this.renderStatPlus(this.props.stats.dice, DiceIcon)) }
@@ -48,7 +58,9 @@ export default class StatsComponent extends React.Component<IStatsProps, {}> {
             { this.props.stats.memory !== undefined && (this.props.isReward 
                 ? this.renderStat(this.val(this.props.stats.memory), MemoryIcon)
                 : this.renderStatPlus(this.props.stats.memory, MemoryIcon)) }
-            { this.props.stats.slumber !== undefined && this.renderStat(this.val(this.props.stats.slumber), SlumberIcon) }
+            { this.props.stats.slumber !== undefined && (this.props.stats.slumber === "+dice"
+                ? this.renderDiceSlumber()
+                : this.renderStat(this.val(this.props.stats.slumber), SlumberIcon)) }
             { this.props.stats.lucidity !== undefined && this.renderStat(this.val(this.props.stats.lucidity), LucidityIcon) }
             { this.props.stats.providence !== undefined && this.renderStat(this.val(this.props.stats.providence), ProvidenceIcon) }
         </div>

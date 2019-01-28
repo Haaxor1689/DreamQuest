@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {  Choice } from 'src/Models/Models';
+import { Choice } from 'src/Models/Cards';
 import StatsComponent from './StatsComponent';
 
 export default class ChoiceComponent extends React.Component<Choice, {}> {
@@ -9,25 +9,17 @@ export default class ChoiceComponent extends React.Component<Choice, {}> {
     )
     
     private renderRequirement = (): JSX.Element => (
-        <div>
-            <span>Req: </span>
-            <StatsComponent stats={this.props.requirement!} />
-        </div>
+        <StatsComponent stats={this.props.requirement!} backgroundClass="card-choice card-choice-requirement" />
     )
     
     private renderSuccess = (): JSX.Element => (
-        <div>
-            <span>Reward: </span>
-            <StatsComponent isReward stats={this.props.success!} />
-        </div>
+        <StatsComponent isReward stats={this.props.success!} backgroundClass="card-choice card-choice-reward" />
     )
     
     private renderFailure = (): JSX.Element => (
-        <div>
-            <span>Failure: </span>
-            <StatsComponent isReward stats={this.props.failure!} />
-        </div>
+        <StatsComponent isReward stats={this.props.failure!} backgroundClass="card-choice card-choice-failure" />
     )
+    
     public render = () => (
         <div className="col">
             { this.props.description && this.renderDescription() }

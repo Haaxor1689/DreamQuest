@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Card } from 'src/Models/Cards';
+import { Card, Cards } from 'src/Models/Cards';
 
 import CharacterCardComponent from "./CharacterCardComponent";
 import RealityCardComponent from './RealityCardComponent';
@@ -8,6 +8,11 @@ import DreamCardComponent from './DreamCardComponent';
 import BossCardComponent from './BossCardComponent';
 
 import CardsJSON from './../Data/Cards.json';
+import exportedTypeSuite from 'src/Models/Cards-ti';
+import {createCheckers} from "ts-interface-checker";
+
+const checker = createCheckers(exportedTypeSuite);
+checker.Cards.check(CardsJSON);
 
 interface IAppState {
     cards: Card[]
@@ -15,7 +20,7 @@ interface IAppState {
 
 export default class App extends React.Component<{}, IAppState> {
     public state: IAppState = {
-        cards: CardsJSON as Card[],
+        cards: (CardsJSON as Cards).cards,
     }
 
     public render = () => (
