@@ -1,44 +1,81 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dream Quest
 
-## Available Scripts
+**Players:** 2-4
+**Time:** 30-120
+**Age:** 14+
 
-In the project directory, you can run:
+**Card size:** 57px x 87px
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Dream-Quest is a competitive game where players assume the role of a dreamer, existing in two different realities at once – each player has an avatar in the “real” world part of the board, and also one on the “dream” part of the board. The real world represents the repetitive routine of everyday life, that the characters have to endure before going to sleep and continuing their epic quest in the alternate reality.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+In the dream world, meanwhile, the players are racing to complete an epic quest and achieve complete physical transition into the world of dreams, which represents the only escape from the boring gray of everyday routine.
 
-### `npm test`
+## Game components
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Reality game board
 
-### `npm run build`
+Cyclic graph, graphically fashioned to represent a clock, symbolizing the repetitive nature of real world. Some nodes may have special rules written directly on them.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dreamlands game board
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+A mostly linear progress board, with multiple chutes-and-ladders-like shortcuts. Board is fashioned in a way that contrasts with the reality board, with magical forests, vast irregular cities, mysterious caverns and the like.  The nodes on the dream board are color-coded to represent potentially dangerous areas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Real events deck
 
-### `npm run eject`
+A deck of cards representing events happening to the real-world avatars of the players. These have effect on the dreamtime.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Dream events deck
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A deck of cards representing encounters the players’ dream avatars experience on their journey.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Character sheets representing the character the player has chosen for the adventure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Basic stats
 
-## Learn More
+**A character sheet contains these elements:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Twice the size o normal card
+- Character name and occupation
+- A short story of the character background
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Memory value
+
+- **Range:** 2+ to 6+
+- **Mod:** ++/-- token
+
+Used to determine where the character resumes from on the dream-path when they return to sleep
+
+### Slumber value
+
+- **Range:** 0 to 12
+- **Mod:** Clock
+- **Icon:** ZzZ..
+
+Represents for how much longer the character can maintain their existence in the dream world. If a character’s Slumber value hits 0 at any time, they wake up.
+
+| Clock | Clock hand |
+|:-:|:-:|
+| ![Clock](public/assets/Clock.png?raw=true "Clock") | ![Clock hand](public/assets/ClockHand.png?raw=true "Clock hand") |
+
+### Lucidity value
+
+- **Range:** 0 to 6
+- **Mod:** ++/-- token (slider)
+
+Represents how much control the character can exercise over the dream realms. Lucidity is used to determine the outcome of encounters. The players may also attempt to wake up other players using lucidity (provided they are on the same space as the other character).
+
+### Providence value
+
+- **Range:** 0 to *x*
+- **Mod:** 1/2/5 tokens
+
+Represents the knowledge the character has accumulated during their journey. Providence is amassed during play and is used during the final encounter.
+
+## Basic rules
+
+Each player has two player avatars, one in the real world and one in the dream world. Each player gets one action per turn. This action can be taken in the real world or in the dream world, depending on which player avatar is active. The players begin the game awake, and can use the real-world action to move one space, take a real-world event card, and then fall asleep. This means that the next round, they get to activate their dream-world avatar instead. Likewise, when the player in dream-world should wake up, they can only activate their real-world avatar in the next world.
+
+*Maroš Beťko, Oliver Pačut, Mária Šviriková*
+*Fall 2018, PA215 Game Design I.*
