@@ -6,9 +6,10 @@ import CharacterCardComponent from "./CharacterCardComponent";
 import RealityCardComponent from './RealityCardComponent';
 import DreamCardComponent from './DreamCardComponent';
 import BossCardComponent from './BossCardComponent';
+import { Col } from 'reactstrap';
 
 export default class AnyCard extends React.Component<Card> {
-    public render = () => {
+    public renderCard = () => {
         switch (this.props.type) {
             case "Character": return <CharacterCardComponent {...this.props} />;
             case "Reality": return <RealityCardComponent {...this.props} />;
@@ -17,4 +18,10 @@ export default class AnyCard extends React.Component<Card> {
             default: return <div></div>;
         }
     }    
+
+    public render = () => (
+        <Col>
+            {this.renderCard()}
+        </Col>
+    )
 }

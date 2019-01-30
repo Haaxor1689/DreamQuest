@@ -31,6 +31,8 @@ export const Choice = t.iface([], {
 
 export const CharacterCard = t.iface(["BaseCard"], {
   "type": t.lit("Character"),
+  "profession": "string",
+  "special": "string",
   "stats": "Stats",
 });
 

@@ -2,7 +2,7 @@
   "name": "dream-quest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://haaxor1689.github.io/DreamQuest/",
+  "homepage": "https://haaxor1689.github.io/DreamQuest",
   "dependencies": {
     "@types/jest": "23.3.13",
     "@types/lodash.groupby": "^4.6.4",

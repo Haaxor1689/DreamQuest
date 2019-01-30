@@ -1037,7 +1037,7 @@
             "type": "Character",
             "name": "Professor Warren Bedford",
             "profession": "Academic",
-            "special ability": "Critical Thinking: Once per Lucidity roll, Professor Warren Bedford can spent 3 Providence points to add 1 to the roll.",
+            "special": "Critical Thinking: Once per Lucidity roll, Professor Warren Bedford can spent 3 Providence points to add 1 to the roll.",
             "description": "A professor of ethnology at the university, Bedford has read much about the land of dreams, but naturally rejected it as fantasy. Until one day, he was visited by the ghost of his long deceased grandfather, and was brought to the land of Dream to help prevent the incoming catastrophe.",
             "imageUrl": "",
             "stats": {
@@ -1051,7 +1051,7 @@
             "type": "Character",
             "name": "John Snyder",
             "profession": "Blue Collar Worker",
-            "special ability": "Regular Shifts: John ignores penalties to Slumber gained from Real World events.",
+            "special": "Regular Shifts: John ignores penalties to Slumber gained from Real World events.",
             "description": "John has worked at the docks for the greater part of his adult life. Between the long hours and his family, he doesn't get much sleep. Nevertheless, he is a very experienced dreamer. John had entered the land of Dream physically for the first time when he was around six and wandered into a portal in a magical forest. He managed to return, but every night, John had retreated back to relive his fantasies.",
             "imageUrl": "",
             "stats": {
@@ -1065,7 +1065,7 @@
             "type": "Character",
             "name": "Coiled Serpent",
             "profession": "Shaman",
-            "special ability": "Walking Between the Worlds: Coiled Serpent begins the game with her dream avatar active and her real avatar inactive. Additionally, she can enter secret passages even if she doesn't start her turn standing on them.",
+            "special": "Walking Between the Worlds: Coiled Serpent begins the game with her dream avatar active and her real avatar inactive. Additionally, she can enter secret passages even if she doesn't start her turn standing on them.",
             "description": "Serpent had grown up in a tribal society, being raised to become the next shaman and visionary for the tribe. But her family wanted a better life for her, and so they moved to a big city to raise Serpent in a modern way. Serpent has successfully integrated into society, but has not lost contact with her origins, often visiting her home tribe and practising the age-old traditions of traveling between worlds that she has been taught.",
             "imageUrl": "",
             "stats": {
@@ -1079,7 +1079,7 @@
             "type": "Character",
             "name": "Amanda Blunt",
             "profession": "Student",
-            "special ability": "So Much Potential: After drawing a Real World Event card, Amanda may spend 3 Providence points to ignore the penalties printed on the card.",
+            "special": "So Much Potential: After drawing a Real World Event card, Amanda may spend 3 Providence points to ignore the penalties printed on the card.",
             "description": "Amanda is a young, curious student of psychology. In her studies, she has read much about the Dreamlands. She is not sure if the studies are for her, as she finds more satisfaction in exploring the worlds that she believes are within her head, than in understanding the heads of others.",
             "imageUrl": "",
             "stats": {
@@ -1093,7 +1093,7 @@
             "type": "Character",
             "name": "Gloria Silverlake",
             "profession": "Occult Writer",
-            "special ability": "Foresight: When drawing Dream World Event cards, Gloria draws two cards and chooses one of them to be the encounter for the round. Discard the other card.",
+            "special": "Foresight: When drawing Dream World Event cards, Gloria draws two cards and chooses one of them to be the encounter for the round. Discard the other card.",
             "description": "Gloria has been putting her nightly visits to the land of Dream on paper for decades now. Her newest bestseller introduced a great danger, a villain, into the fantasy realms. But then she realized that her creations are actually more real than she thought, and that it was up to her to save her dreamt up world from oblivion.",
             "imageUrl": "",
             "stats": {
@@ -1107,7 +1107,7 @@
             "type": "Character",
             "name": "Trent Maypole",
             "profession": "Child",
-            "special ability": "No Responsibilities: Trent Maypole does not lose Slumber points at the end of his dream turn.",
+            "special": "No Responsibilities: Trent Maypole does not lose Slumber points at the end of his dream turn.",
             "description": "Trent doesn't like to play in the sandbox or with his toys much. He was always a very sleepy child. The lands of Dream provided him with all the toys and excitement a young boy could want.",
             "imageUrl": "",
             "stats": {

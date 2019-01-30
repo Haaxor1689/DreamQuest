@@ -25,6 +25,8 @@ export interface Choice {
 
 export interface CharacterCard extends BaseCard {
     type: "Character";
+    profession: string;
+    special: string;
     stats: Stats;
 }
 

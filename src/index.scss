@@ -6,7 +6,11 @@
   src: url('./Fonts/JMHCthulhumbusArcadeUGalt1.woff') format('woff');
 }
 
+@import "variables";
+@import "mixins";
+
 @import "Components/BaseCard.scss";
+@import "Components/CharacterCard.scss";
 @import "Components/SectionHeader.scss";
 
 * {

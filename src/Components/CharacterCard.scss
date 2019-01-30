@@ -1,0 +1,124 @@
+$column-width: $card-height * 1.5 / 6;
+
+.character-card {
+    // @extend .card-base;
+    
+    width: $card-height * 1.5;
+    height: $card-width;
+    margin: 0 0 48px 0;
+    padding: 0;
+    padding-right: 2 * $column-width;
+    background-color: gray;
+
+    background: url("./Assets/CharacterCard.png") no-repeat;
+    background-size: cover;
+
+    font-size: 16px;
+
+    position: relative;
+
+    .card-header {
+        @extend .row;
+        @extend .no-gutters;
+
+        height: $column-width;
+        padding: 0;
+        padding-right: $column-width;
+
+        position: relative;
+
+        .card-header-container {
+            @extend .col-12;
+            @extend .align-self-center;
+            
+            .card-title {
+                @include title-mixin();
+                padding: 0 48px;
+                margin-bottom: 0;
+            }
+    
+            .card-profession {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+
+        .card-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: $column-width;
+            height: 100%;
+        }
+    }
+
+    .card-body {
+        width: $column-width * 4;
+        height: 312px;
+        padding: 0 28px;
+
+        .card-description {
+            padding-bottom: 12px;
+            padding-top: 24px;
+        }
+
+        .card-special {
+            padding-top: 8px;
+
+            .card-special-name {
+                font-family: 'Cthulhumbus';
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .card-lucidity {
+        position: absolute;
+        top: 0;
+        right: $column-width;
+
+        width: $column-width;
+        height: 100%;
+
+        padding-top: 8px;
+
+        .card-lucidity-number {
+            width: 100%;
+            height: 56px;
+            padding: 0 0 64px $column-width / 2;
+
+            font-family: 'Cthulhumbus';
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    @mixin character-stat() {
+        position: absolute;
+        right: $column-width / 2;
+
+        width: $column-width / 2;
+        margin-right: -$column-width / 4;
+        height: 50%;
+
+        font-family: 'Cthulhumbus';
+        font-weight: 400;
+        font-size: 80px;
+        text-align: center;
+        color: white;
+    }
+
+    .card-memory {
+        @include character-stat();
+        top: 0;
+    }
+
+    .card-slumber {
+        bottom: 0;
+        @include character-stat();
+    }
+}
