@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Stats } from 'src/Models/Cards';
+import { Stats } from './../Models/Cards';
 
 import DiceIcon from "./../Assets/Dice.png";
 import MovementIcon from "./../Assets/Movement.png";

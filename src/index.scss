@@ -1,0 +1,147 @@
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Cthulhumbus';
+  src: url('./Fonts/JMHCthulhumbusArcadeUGalt1.woff') format('woff');
+}
+
+* {
+  image-rendering: pixelated;
+}
+
+body {
+  font-weight: 600;
+}
+
+.card-base {
+  font-size: 16px;
+  width: 480px;
+  height: 672px;
+  margin: 1rem auto;
+  padding: 0;
+}
+
+.card-image {
+  height: 224px;
+  width: 100%
+}
+
+.card-body {
+  position: absolute;
+  top: 1rem;
+  width: 480px;
+  height: 672px;
+  padding: 224px 24px 0px 24px;
+  background-size: 100%;
+}
+
+.card-movement {
+  font-family: 'Cthulhumbus';
+  position: absolute;
+  top: 124px;
+  left: 50%;
+  width: 112px;
+  margin-left: -56px;
+  font-size: 104px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-title {
+  font-family: 'Cthulhumbus';
+  height: 56px;
+  margin: 56px 0 24px 0;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-description {
+}
+
+.card-divider {
+  margin-bottom: 4px;
+}
+
+.card-stats {
+  display: inline-block;
+}
+
+.card-stat {
+  font-family: 'Cthulhumbus';
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: 400;
+}
+
+.card-stat-value {
+  margin-right: 2px;
+}
+
+.card-stat-icon {
+  margin: -2px 0 2px 0;
+}
+
+.card-choice-requirement {
+  background: url("./Assets/RequirementStripe.png") no-repeat;
+}
+
+.card-choice-reward {
+  background: url("./Assets/RewardStripe.png") no-repeat;
+}
+
+.card-choice-failure {
+  background: url("./Assets/FailureStripe.png") no-repeat;
+}
+
+.card-choice {
+  text-align: center;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 0 12px;
+  margin-top: 4px;
+}
+
+/* RealCard specific */
+.card-body-real {
+  background: url("./Assets/RealCard.png") no-repeat;
+  background-size: cover;
+  padding: 224px 32px 0px 32px;
+}
+
+.card-body-real .card-stats {
+  display: block;
+  text-align: center;
+}
+
+.card-body-real .card-stat {
+  font-size: 40px;
+  margin-right: 48px;
+}
+
+.card-body-real .card-stat-icon {
+  height: 40px;
+}
+
+.card-body-real hr {
+  height: 2px;
+  background-color: black;
+}
+
+.card-body-real .card-stat-value {
+  margin-right: 8px;
+}
+
+/* DreamCard specific */
+.card-body-dream {
+  background: url("./Assets/DreamCard.png") no-repeat;
+  background-size: cover;
+}
+
+@media print {
+  .row {
+      page-break-inside: avoid;
+  }
+}

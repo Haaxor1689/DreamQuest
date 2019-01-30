@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { BossCard } from 'src/Models/Cards';
+import { BossCard } from './../Models/Cards';
+
 import BaseCardComponent from './BaseCardComponent';
 
 export default class BossCardComponent extends React.Component<BossCard, {}> {

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { Choice } from 'src/Models/Cards';
+import { Choice } from './../Models/Cards';
+
 import StatsComponent from './StatsComponent';
 
 export default class ChoiceComponent extends React.Component<Choice, {}> {

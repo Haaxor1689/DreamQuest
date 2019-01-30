@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { RealityCard } from 'src/Models/Cards';
+import { RealityCard } from './../Models/Cards';
+
 import StatsComponent from './StatsComponent';
 import BaseCardComponent from './BaseCardComponent';
 

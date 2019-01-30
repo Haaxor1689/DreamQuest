@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { CharacterCard } from 'src/Models/Cards';
+import { CharacterCard } from './../Models/Cards';
+
 import StatsComponent from './StatsComponent';
 import BaseCardComponent from './BaseCardComponent';
 

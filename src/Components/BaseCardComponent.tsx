@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { BaseCard } from 'src/Models/Cards';
-import { getUrl } from 'src/Helpers/ImageUrlHelper';
+import { BaseCard } from './../Models/Cards';
+import { getUrl } from './../Helpers/ImageUrlHelper';
 
 interface IBaseCardComponentProps {
     card: BaseCard,

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { DreamCard } from 'src/Models/Cards';
+import { DreamCard } from './../Models/Cards';
+
 import StatsComponent from './StatsComponent';
 import BaseCardComponent from './BaseCardComponent';
 import DividerComponent from './DividerComponent';
