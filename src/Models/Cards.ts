@@ -8,11 +8,11 @@ export interface BaseCard {
 }
 
 export interface Stats {
-    dice?: number | "lucidity";
+    dice?: number;
     movement?: number;
-    memory?: number;
-    slumber?: number | "+dice";
-    lucidity?: number;
+    memory?: number | string | "Roll under memory" | "Roll over memory";
+    slumber?: number | "+D6";
+    lucidity?: number | "Roll under lucidity";
     providence?: number | string;
 }
 
@@ -42,7 +42,6 @@ export interface DreamCard extends BaseCard {
 
 export interface BossCard extends BaseCard {
     type: "Boss";
-
 }
 
 export type Card = CharacterCard | RealityCard | DreamCard | BossCard;

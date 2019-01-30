@@ -2,6 +2,123 @@
     "cards": [
         {
             "type": "Reality",
+            "name": "They",
+            "description": "Are they watching you? Are they following you? Is it just your imagination or...? Do they want to get you?",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3,
+                "lucidity": -2,
+                "memory": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Abdominal Pain",
+            "description": "Due to being under too much stress, you have developed abdominal pain that makes it difficult to fall asleep.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3,
+                "lucidity": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Bank",
+            "description": "Your mortgage payments are overdue, debt collectors keep knocking on your doors.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -4,
+                "memory": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Demotion",
+            "description": "Because of restless nights, you do not perform up to your usual standards at your job. You've been transferred to a worse position and your salary has been decreased.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3,
+                "memory": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Fine",
+            "description": "Crossing a street without saying hello to a military officer can be deadly in this country. This time they've taken all your money, groceries and wrote down your name.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -2,
+                "memory": -2
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Friend",
+            "description": "Your best friend came again to ask for money. Even though money is really tight lately and you had to reach into your iron reserve, you give it to him.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -2
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Missing",
+            "description": "Your child didn't come back last night. Their phone is dead and nobody knows anything about your them. The police seem to be of no use.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -6,
+                "lucidity": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Evacuation",
+            "description": "You are awoken in the middle of the night by a blaring fire alarm. Disoriented, you quickly, grab your shoes and family and run for your life.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3,
+                "memory": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Good dinner",
+            "description": "What luck. After weeks without meat you've found some in a supermarket sale. But the meat was spoiled. After a fulfilling dinner you ve started to feel horrible cramps and vomited almost all through the night.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -6
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Cheating Spouse",
+            "description": "After coming back home early from your dull job you catch your spouse in flagrante in your own bed. Tonight you will have a tough time falling asleep in a hostel room, trying to forget.",
+            "imageUrl": "",
+            "effect": {
+                "memory": -2,
+                "slumber": -2
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Dog",
+            "description": "During your daily morning run around the neighborhood your fearsome German Shepherd is run over by a car. You spend the night by his side in the animal hospital, hoping he'll get through.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Horror Movie Night",
+            "description": "You caught the latest horror movie on Netflix. Now you have trouble falling asleep!",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3
+            }
+        },
+        {
+            "type": "Reality",
             "name": "Early Hours",
             "description": "You have to wake up for work early tomorrow, and therefore can't get much sleep.",
             "imageUrl": "",
@@ -15,8 +132,7 @@
             "description": "You have witnessed a gruesome traffic accident, and are haunted by the images.",
             "imageUrl": "",
             "effect": {
-                "lucidity": -1,
-                "slumber": -2
+                "lucidity": -1
             }
         },
         {
@@ -25,11 +141,65 @@
             "description": "After traveling a long distance, you have trouble staying awake but are unable to fall asleep.",
             "imageUrl": "",
             "effect": {
-                "memory": -1,
-                "slumber": -2
+                "memory": -1
             }
         },
         {
+            "type": "Reality",
+            "name": "Dreamcatcher",
+            "description": "Your friend gifts you a dreamcatcher. You never believed in such preposterous trinkets, but you like it, so you hang it over your bed.",
+            "imageUrl": "",
+            "effect": {
+                "memory": -1,
+                "slumber": 2
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "The Pastor",
+            "description": "You visit the nearby church, seeking solace. The sermon unnerves you, and you get home wondering what is the nature of this other world that you visit so often.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "The Policeman",
+            "description": "The policeman glares at you distrustingly. 'I may have to hold you in for questioning. Hope you don't have any plans for the evening.'",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -5
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Screams",
+            "description": "The moonlit streets outside are flooded by a cacophony of bone chilling screams. Better go and lock the door",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3,
+                "lucidity": -1
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Infant Trouble",
+            "description": "The baby in your family seems to have fallen ill. Someone has to stay up, changing its cold compresses regularly and reducing the burning fever.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -4
+            }
+        },
+        {
+            "type": "Reality",
+            "name": "Broken Bed",
+            "description": "The fish and chips have taken their toll, and your bed has broken a leg. Hopefully, the couch will hold.",
+            "imageUrl": "",
+            "effect": {
+                "slumber": -3
+            }
+        },{
             "type": "Dream",
             "name": "Great Library",
             "description": "You arrive upon a library cataloguing all the dreams ever dreamt by humans.",
@@ -39,7 +209,7 @@
                 {
                     "description": "Read the library",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 1,
@@ -85,19 +255,23 @@
         {
             "type": "Dream",
             "name": "Gate of Dreams",
-            "description": "You stand before the Gate of Dreams. The two guardians, Thog and Thok, ask you questions to determine whether you are worthy of passage.",
+            "description": "You stand before the Gate of Dreams. The two guardians, Thog and Thok, ask you questions to determine whether you are worthy of passage. If you tell them three unbelievable dreams, you may pass.",
             "imageUrl": "",
             "movement": 0,
             "choices": [
                 {
                     "description": "Answer truthfully",
                     "requirement": {
-                        "providence": -3,
-                        "slumber": -5
+                        "memory": "Roll over memory"
                     },
                     "success": {
                         "movement": 7,
-                        "lucidity": 1
+                        "lucidity": 1,
+                        "providence": 2
+                    },
+                    "failure": {
+                        "providence": -3,
+                        "slumber": -5
                     }
                 },
                 {
@@ -115,7 +289,7 @@
                 {
                     "description": "Face the nightmares",
                     "requirement": {
-                        "dice": "lucidity",
+                        "lucidity": "Roll under lucidity",
                         "slumber": -3
                     },
                     "success": {
@@ -145,7 +319,7 @@
             "choices": [
                 {
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "failure": {
                         "movement": -3,
@@ -164,7 +338,7 @@
                 {
                     "description": "Follow the music",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": -2,
@@ -191,7 +365,7 @@
                     "description": "Fight the monster",
                     "requirement": {
                         "slumber": -5,
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 5,
@@ -215,9 +389,20 @@
             "description": "You walk around familiar streets in your home city. You know this is a dream but somehow, you feel at home.",
             "imageUrl": "",
             "movement": 4,
-            "effect": {
-                "lucidity": 1
-            }
+            "choices": [
+                {
+                    "description": "Try to remember how this world works.",
+                    "requirement": {
+                        "memory": "Roll under memory"
+                    },
+                    "success": {
+                        "lucidity": 1
+                    },
+                    "failure": {
+                        "slumber": -3
+                    }
+                }
+            ]
         },
         {
             "type": "Dream",
@@ -229,7 +414,7 @@
                 {
                     "description": "You try to mount a mustang and use it for quick travel.",
                     "requirement": {
-                        "dice": "lucidity",
+                        "lucidity": "Roll under lucidity",
                         "providence": -1,
                         "slumber": -2
                     },
@@ -276,7 +461,7 @@
                 {
                     "description": "You try to figure out the sign and follow the crows for a while.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "memory": "Roll under memory"
                     },
                     "success": {
                         "lucidity": 1,
@@ -307,7 +492,7 @@
                         "movement": -3
                     },
                     "success": {
-                        "slumber": "+dice"
+                        "slumber": "+D6"
                     }
                 },
                 {
@@ -370,10 +555,9 @@
             "movement": 0,
             "choices": [
                 {
-                    "description": "Take the test.",
+                    "description": "Try to convince the captain you are worthy.",
                     "requirement": {
-                        "dice": "lucidity",
-                        "providence": -1
+                        "memory": "Roll under memory"
                     },
                     "success": {
                         "movement": 4,
@@ -402,12 +586,12 @@
                 {
                     "description": "Try to steer the asteroid away from the Dreamlands.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 3,
                         "providence": 2,
-                        "slumber": 3
+                        "slumber": 3 
                     },
                     "failure": {
                         "providence": -2,
@@ -425,14 +609,14 @@
         {
             "type": "Dream",
             "name": "Zeppelin Captains",
-            "description": "The Zeppelins of Mnar are crewed by traders and adventurers who have been to every corner of Dreamlands.",
+            "description": "The Zeppelins of Mnar are crewed by traders and aadventurers who have been to every corner of the Dreamlands.",
             "imageUrl": "",
             "movement": 3,
             "choices": [
                 {
                     "description": "Hide on the zeppelin as a stowaway",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 3
@@ -466,7 +650,7 @@
                 {
                     "description": "You try to rewind the clock and buy yourself more time in the Dreamlands.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "slumber": 3
@@ -487,7 +671,7 @@
                 {
                     "description": "Use your newfound ability to fly around the world.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 4
@@ -511,7 +695,7 @@
                 {
                     "description": "You try not to fall under the mirror's spell.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "providence": 2
@@ -533,7 +717,7 @@
                 {
                     "description": "Accept the offer, become the wizard's apprentice",
                     "requirement": {
-                        "dice": "lucidity",
+                        "lucidity": "Roll under lucidity",
                         "providence": -1
                     },
                     "success": {
@@ -561,7 +745,7 @@
                 {
                     "description": "Improvise",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": -2,
@@ -590,7 +774,7 @@
                 {
                     "description": "Try to control the form of the strange mist.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 3
@@ -614,7 +798,7 @@
                 {
                     "description": "Escape the all-seeing gaze.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "providence": 1,
@@ -637,7 +821,7 @@
                 {
                     "description": "Join the battle and alter the course of history.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "lucidity": 1,
@@ -667,7 +851,7 @@
                 {
                     "description": "It is up to you to deliver your team to victory.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "providence": 1
@@ -688,7 +872,7 @@
                 {
                     "description": "Try to tame the beast.",
                     "requirement": {
-                        "dice": "lucidity",
+                        "lucidity": "Roll under lucidity",
                         "providence": -1
                     },
                     "success": {
@@ -710,7 +894,7 @@
             "name": "Haïta the Shepherd",
             "description": "A shepherd is sitting on a rock, overlooking a flock of sheep. He plays melodies most wonderful on his flute, and offers to tell you a tale.",
             "imageUrl": "",
-            "movement": 0,
+            "movement": 3,
             "choices": [
                 {
                     "description": "Listen to the shepherd's tales of Carcosa and Hastur.",
@@ -718,20 +902,19 @@
                         "providence": ">5"
                     },
                     "success": {
+                        "movement": -3,
                         "lucidity": 1,
                         "providence": 1,
                         "slumber": -2
                     },
                     "failure": {
+                        "movement": -3,
                         "providence": 2,
                         "slumber": -2
                     }
                 },
                 {
-                    "description": "Humbly refuse the shepherd and continue on your journey.",
-                    "success": {
-                        "movement": 3
-                    }
+                    "description": "Humbly refuse the shepherd and continue on your journey."
                 }
             ]
         },
@@ -745,7 +928,7 @@
                 {
                     "description": "Resist the maiden and continue on your journey",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": -3,
@@ -777,7 +960,7 @@
                 {
                     "description": "Say a prayer to the gods.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "lucidity": 1,
@@ -806,7 +989,7 @@
                 {
                     "description": "Try to find the key.",
                     "requirement": {
-                        "dice": "lucidity"
+                        "lucidity": "Roll under lucidity"
                     },
                     "success": {
                         "movement": 4
@@ -850,16 +1033,15 @@
                 "lucidity": 1,
                 "slumber": 1
             }
-        },
-        {
+        },{
             "type": "Character",
             "name": "Professor Warren Bedford",
             "profession": "Academic",
-            "special ability": "",
+            "special ability": "Critical Thinking: Once per Lucidity roll, Professor Warren Bedford can spent 3 Providence points to add 1 to the roll.",
             "description": "A professor of ethnology at the university, Bedford has read much about the land of dreams, but naturally rejected it as fantasy. Until one day, he was visited by the ghost of his long deceased grandfather, and was brought to the land of Dream to help prevent the incoming catastrophe.",
             "imageUrl": "",
             "stats": {
-                "memory": 2,
+                "memory": "2+",
                 "slumber": 8,
                 "lucidity": 4,
                 "providence": 0
@@ -869,25 +1051,25 @@
             "type": "Character",
             "name": "John Snyder",
             "profession": "Blue Collar Worker",
-            "special ability": "",
+            "special ability": "Regular Shifts: John ignores penalties to Slumber gained from Real World events.",
             "description": "John has worked at the docks for the greater part of his adult life. Between the long hours and his family, he doesn't get much sleep. Nevertheless, he is a very experienced dreamer. John had entered the land of Dream physically for the first time when he was around six and wandered into a portal in a magical forest. He managed to return, but every night, John had retreated back to relive his fantasies.",
             "imageUrl": "",
             "stats": {
-                "memory": 3,
+                "memory": "3+",
                 "slumber": 6,
                 "lucidity": 5,
-                "providence": 0
+                "providence": 0 
             }
         },
         {
             "type": "Character",
             "name": "Coiled Serpent",
             "profession": "Shaman",
-            "special ability": "Walking Between the Worlds: Coiled Serpent begins the game with her dream avatar active and her real avatar inactive.",
+            "special ability": "Walking Between the Worlds: Coiled Serpent begins the game with her dream avatar active and her real avatar inactive. Additionally, she can enter secret passages even if she doesn't start her turn standing on them.",
             "description": "Serpent had grown up in a tribal society, being raised to become the next shaman and visionary for the tribe. But her family wanted a better life for her, and so they moved to a big city to raise Serpent in a modern way. Serpent has successfully integrated into society, but has not lost contact with her origins, often visiting her home tribe and practising the age-old traditions of traveling between worlds that she has been taught.",
             "imageUrl": "",
             "stats": {
-                "memory": 4,
+                "memory": "5+",
                 "slumber": 9,
                 "lucidity": 5,
                 "providence": 0
@@ -897,11 +1079,11 @@
             "type": "Character",
             "name": "Amanda Blunt",
             "profession": "Student",
-            "special ability": "",
+            "special ability": "So Much Potential: After drawing a Real World Event card, Amanda may spend 3 Providence points to ignore the penalties printed on the card.",
             "description": "Amanda is a young, curious student of psychology. In her studies, she has read much about the Dreamlands. She is not sure if the studies are for her, as she finds more satisfaction in exploring the worlds that she believes are within her head, than in understanding the heads of others.",
             "imageUrl": "",
             "stats": {
-                "memory": 3,
+                "memory": "3+",
                 "slumber": 11,
                 "lucidity": 4,
                 "providence": 0
@@ -911,11 +1093,11 @@
             "type": "Character",
             "name": "Gloria Silverlake",
             "profession": "Occult Writer",
-            "special ability": "",
+            "special ability": "Foresight: When drawing Dream World Event cards, Gloria draws two cards and chooses one of them to be the encounter for the round. Discard the other card.",
             "description": "Gloria has been putting her nightly visits to the land of Dream on paper for decades now. Her newest bestseller introduced a great danger, a villain, into the fantasy realms. But then she realized that her creations are actually more real than she thought, and that it was up to her to save her dreamt up world from oblivion.",
             "imageUrl": "",
             "stats": {
-                "memory": 4,
+                "memory": "4+",
                 "slumber": 8,
                 "lucidity": 4,
                 "providence": 1
@@ -925,12 +1107,12 @@
             "type": "Character",
             "name": "Trent Maypole",
             "profession": "Child",
-            "special ability": "",
+            "special ability": "No Responsibilities: Trent Maypole does not lose Slumber points at the end of his dream turn.",
             "description": "Trent doesn't like to play in the sandbox or with his toys much. He was always a very sleepy child. The lands of Dream provided him with all the toys and excitement a young boy could want.",
             "imageUrl": "",
             "stats": {
-                "memory": 2,
-                "slumber": 12,
+                "memory": "3+",
+                "slumber": 9,
                 "lucidity": 3,
                 "providence": 0
             }

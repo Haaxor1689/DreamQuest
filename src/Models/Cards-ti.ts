@@ -14,11 +14,11 @@ export const BaseCard = t.iface([], {
 });
 
 export const Stats = t.iface([], {
-  "dice": t.opt(t.union("number", t.lit("lucidity"))),
+  "dice": t.opt("number"),
   "movement": t.opt("number"),
-  "memory": t.opt("number"),
-  "slumber": t.opt(t.union("number", t.lit("+dice"))),
-  "lucidity": t.opt("number"),
+  "memory": t.opt(t.union("number", "string", t.lit("Roll under memory"), t.lit("Roll over memory"))),
+  "slumber": t.opt(t.union("number", t.lit("+D6"))),
+  "lucidity": t.opt(t.union("number", t.lit("Roll under lucidity"))),
   "providence": t.opt(t.union("number", "string")),
 });
 

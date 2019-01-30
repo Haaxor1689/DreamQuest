@@ -55,10 +55,6 @@ Used to determine where the character resumes from on the dream-path when they r
 
 Represents for how much longer the character can maintain their existence in the dream world. If a character’s Slumber value hits 0 at any time, they wake up.
 
-| Clock | Clock hand |
-|:-:|:-:|
-| ![Clock](public/assets/Clock.png?raw=true "Clock") | ![Clock hand](public/assets/ClockHand.png?raw=true "Clock hand") |
-
 ### Lucidity value
 
 - **Range:** 0 to 6
