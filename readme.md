@@ -57,7 +57,7 @@ Represents for how much longer the character can maintain their existence in the
 
 | Clock | Clock hand |
 |:-:|:-:|
-| ![Clock](public/assets/Clock.png?raw=true "Clock") | ![Clock hand](public/assets/ClockHand.png?raw=true "Clock hand") |
+| ![Clock](src/Assets/Clock.png?raw=true "Clock") | ![Clock hand](src/Assets/ClockHand.png?raw=true "Clock hand") |
 
 ### Lucidity value
 
