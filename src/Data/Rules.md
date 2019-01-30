@@ -1,77 +1,137 @@
-# Dream Quest
+## 1. Welcome information
 
-- **Players:** 2-4
-- **Time:** 30-120
-- **Age:** 14+
+Dream-Quest is a competitive game for 2-5 players, playable in around two hours. The players assume the role of a dreamer, existing in two different realities at once – the Dream World and the Real World. The Real World represents the repetitive routine of everyday life, that the characters have to endure before going to sleep and continuing their epic quest in the alternate reality.
 
-**Card size:** 57px x 87px
+## 2. Object of the game
 
-## Description
+The players are racing to complete an epic quest and achieve complete physical transition into the Dream World by fulfilling a legendary deed (like beating a nightmare monster), which represents the only escape from the boring gray of everyday routine.
 
-Dream-Quest is a competitive game where players assume the role of a dreamer, existing in two different realities at once – each player has an avatar in the “real” world part of the board, and also one on the “dream” part of the board. The real world represents the repetitive routine of everyday life, that the characters have to endure before going to sleep and continuing their epic quest in the alternate reality.
+## 3. Overview
 
-In the dream world, meanwhile, the players are racing to complete an epic quest and achieve complete physical transition into the world of dreams, which represents the only escape from the boring gray of everyday routine.
+## 4. Components, preparation
 
-## Game components
+- 1 Reality Game Board
+- 1 Dream Game Board
+- 10 Player Tokens
+- 45 Event Cards
+    - 33 Dream Event Cards
+    - 12 Real World Event Cards
+    - 3 Final Quest Cards
+- 6 Character Sheets
+- 2 Dice
+- 5 Lucidity sliders
+- 30 Providence Tokens
+- 5 Slumber indicators
+- 10 Memory modifier tokens
 
-### Reality game board
+## 5. Component overview
 
-Cyclic graph, graphically fashioned to represent a clock, symbolizing the repetitive nature of real world. Some nodes may have special rules written directly on them.
+### Game Boards
 
-### Dreamlands game board
+The game board is divided into two worlds where the adventure can take place. The real world is divided into twelve spaces representing the flow of time. The dream world board depicts the mysterious land of dreams.
 
-A mostly linear progress board, with multiple chutes-and-ladders-like shortcuts. Board is fashioned in a way that contrasts with the reality board, with magical forests, vast irregular cities, mysterious caverns and the like.  The nodes on the dream board are color-coded to represent potentially dangerous areas.
+**Real World board**
 
-### Real events deck
+This board is divided into twelve spaces. It serves to represent the background to the real adventure - the everyday reality of the player characters.
 
-A deck of cards representing events happening to the real-world avatars of the players. These have effect on the dreamtime.
+**Dream board**
 
-### Dream events deck
+The Dream Board is composed of normal and special spaces that the players can move across. The white spaces have no special effects associated with them, while the colored spaces provide additional gaming effects for players located on them.
 
-A deck of cards representing encounters the players’ dream avatars experience on their journey.
+1. **Starting space**
+    - All characters start here. Some game rules may refer to this space.
+1. **Cursed Areas**
+    - All drawn event cards have their Movement value reduced by 1 while the player avatar is on a cursed space.
+1. **Blessed Areas**
+    - Every time a player's avatar ends their turn on a blessed space, the player gains one Providence.
+1. **Mystery Areas**
+    - At the beginning of a turn in which the player's avatar is active and located on a mystery space, roll a dice. 
+    - On a roll of 1-2, all drawn event cards have their movement value reduced to 0.
+    - On a roll of 3-4, take your turn as normal.
+    - On a roll of 5-6, All Lucidity rolls the player takes this turn are automatically successful.
+1. **The Dream Cycle**
+    - In order to win, the player's active avatar must be located on one of these spaces. You may NOT gain Providence in any way in the Dream Cycle.
 
-Character sheets representing the character the player has chosen for the adventure
+Sometimes, the road ahead may contain a crossroads. The player may usually choose which path to take. But some shortcuts are hidden. These shortcuts always indicate which route is the secret route (as denoted by the small arrow). The player can always choose one of the other paths, but can ONLY take the secret route if they began their turn on the crossroads space. 
 
-## Basic stats
+## 6. Game Setup
 
-**A character sheet contains these elements:**
+Set up the twin game board on the table. Set up the card decks in separate piles. Each player then takes two figurines of the same color. One is set up upwards in the real world (this is the active avatar), and the other is set up laterally in the Dreamlands (this is the inactive avatar).
 
-- Twice the size o normal card
-- Character name and occupation
-- A short story of the character background
+Set up the chosen quest card next to the board. (This can be chosen randomly or agreed upon.)
 
-### Memory value
+Each player then takes one Lucidity Slider and sets it up on their character sheet. Likewise, each player takes sets their Slumber value to the starting amount indicated on their character sheet.
 
-- **Range:** 2+ to 6+
-- **Mod:** ++/-- token
+## 7. Game Round
 
-Used to determine where the character resumes from on the dream-path when they return to sleep
+During a game round, each player takes one player turn.
 
-### Slumber value
+At the beginning of a player turn, one of the following applies:
 
-- **Range:** 0 to 12
-- **Mod:** Clock
-- **Icon:** ZzZ..
+1. the player's Real Avatar is active, the player's Dream avatar is inactive.
+    - The player takes a real world action:
+        1. Move up one space in clockwise direction
+        1. Draw a card from the Real Events Deck
+            - This card will most likely impose a penalty on the player's next journey. Take the tokens necessary to represent this, or lower your current attribute value, or else keep the card next to your character sheet to represent this. Note that these penalties are one-time only, and are discarded after the character first Falls Asleep and their effects are activated.
+        1. Fall Asleep
+1. the player's Real Avatar is inactive, the player's Dream avatar is active.
+    - The player takes a dream world action:
+        1. Check for Victory conditions
+        1. Draw a card from the Dream Events deck
+        1. Resolve the drawn card
+        1. Move up to as many spaces as is the movement value indicated on the card.
+        1. Lose one Slumber.
+        1. Suffer additional penalties or gain bonuses depending on the color of the dream region you are currently in.
+        1. If the player's Slumber value is 0, immediately Wake Up.
 
-Represents for how much longer the character can maintain their existence in the dream world. If a character’s Slumber value hits 0 at any time, they wake up.
+After all the players have taken one player turn (in a clockwise direction), a new game round begins.
 
-### Lucidity value
+## 9. Rules
 
-- **Range:** 0 to 6
-- **Mod:** ++/-- token (slider)
+1. Waking Up and Falling Asleep
+    1. Waking Up
+        - When a player Wakes Up, reset their Lucidity and Slumber values to the number printed on their respective character sheet and remove all memory modifier tokens. Set the player's dream avatar as Inactive and the player's real avatar as Active. Note that the player retains any accumulated Providence tokens.
+    1. Falling Asleep
+        - When a player Falls Asleep, set their dream avatar as Active and their real avatar as Inactive. Then, roll a die to see if the character can remember the events of last night properly.
+        - Roll a die and consult the table below. The table shows how many spaces the player has to move BACK (on the shortest route towards the starting dream position - when in doubt, choose randomly).
 
-Represents how much control the character can exercise over the dream realms. Lucidity is used to determine the outcome of encounters. The players may also attempt to wake up other players using lucidity (provided they are on the same space as the other character).
+        | Memory/Dice | 6        | 5        | 4        | 3        | 2        | 1        |
+        | ----------- | -------- | -------- | -------- | -------- | -------- | -------- |
+        | 6+          | 0 spaces | 0 spaces | 0 spaces | 0 spaces | 0 spaces | 0 spaces |
+        | 5+          | 1 space  | 0 spaces | 0 spaces | 0 spaces | 0 spaces | 0 spaces |
+        | 4+          | 2 spaces | 1 space  | 0 spaces | 0 spaces | 0 spaces | 0 spaces |
+        | 3+          | 3 spaces | 2 spaces | 1 space  | 0 spaces | 0 spaces | 0 spaces |
+        | 2+          | 4 spaces | 3 spaces | 2 spaces | 1 space  | 0 spaces | 0 spaces |
+        | 1+          | 5 spaces | 4 spaces | 3 spaces | 2 spaces | 1 space  | 0 spaces |
 
-### Providence value
+    1. Skills
+        - There are four different player statistics in Dream-Quest. These are:
+            1. Memory
+                - Represents how well a character can recall their dream journey. Used mostly to determine where the character will appear in the dream world when they wake up. Also sometimes used in dream events resolution.
+            2. Slumber
+                - Represents how long the character can remain asleep. Stressful events and sleep deprivation all contribute to a reduced Slumber rate. All time spent in the dream world reduces the character's current slumber.
+            3. Lucidity
+                - Represents how much control the character can exercise over the dream realms. Lucidity is used to determine the outcome of encounters drawn from the dream encounters deck. The players may also attempt to wake up other players using lucidity (provided they are on the same space as the other character).
+                - **WAKING UP OTHER PLAYERS**
+                    - If you end your movement on a space comtaining another player's avatar, you may attempt to wake them up. If you do, you both roll a die and add your current lucidity to the roll. If you win the roll-off, the enemy loses Slumber points equal to the difference between the two rolls. You then move your avatar one space forward and move the enemy's avatar one space back (you choose which way to move them).
+                    - If you stop your movement on the space containing another player's inactive avatar, do not roll-off, instead just move them one space back.
+                    - *Note that there is no such player interaction in the real world. The characters might meet, but their interactions are ultimately as meaningless as their existence.*
+            4. Providence
+                - Represents the knowledge the character has accumulated during their journey. Providence is amassed during play and is used during the final encounter.
+    1. Active vs Inactive avatars
+        - At all times, each player must have two avatars: one situated on the Real World board, and the other on the Dream board. One of these avatars is to be "active", i.e. set up upright (see picture) and the other "inactive", i.e. set up laterally (see picture). The player can only move the active avatar. If a player should find themself to have two active avatars, or two inactive avatars, activate the Real World avatar and deactivate the Dream World avatar.
+    1. Use of Providence
+        - Providence can be spent to gain temporary bonuses to rolls, movement, etc. The complete list of what a player can use providence for is as follows:
 
-- **Range:** 0 to *x*
-- **Mod:** 1/2/5 tokens
+        | Effect                      | Cost |
+        | --------------------------- | ---- |
+        | Re-roll 1 dice              | 5    |
+        | Add 1 to dice roll          | 5    |
+        | Immediately move 1 space    | 5    |
+        | Increase Slumber value by 1 | 3    |
 
-Represents the knowledge the character has accumulated during their journey. Providence is amassed during play and is used during the final encounter.
+## 8. Ending the game
 
-## Basic rules
+The game ends once a player is victorious. To win, a player must fulfill the conditions shown on the current Quest card.
 
-Each player has two player avatars, one in the real world and one in the dream world. Each player gets one action per turn. This action can be taken in the real world or in the dream world, depending on which player avatar is active. The players begin the game awake, and can use the real-world action to move one space, take a real-world event card, and then fall asleep. This means that the next round, they get to activate their dream-world avatar instead. Likewise, when the player in dream-world should wake up, they can only activate their real-world avatar in the next world.
-
-*Maroš Beťko, Oliver Pačut, Mária Šviriková*
-*Fall 2018, PA215 Game Design I.*
+If these conditions are simultaneously met, the player is victorious. 
