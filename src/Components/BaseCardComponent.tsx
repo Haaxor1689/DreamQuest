@@ -11,7 +11,7 @@ interface IBaseCardComponentProps {
 
 export default class BaseCardComponent extends React.Component<IBaseCardComponentProps, {}> {
     public render = () => (
-        <div className="col-4">
+        <div className="card-container">
             <div className="card-base">
                 <img className="card-image" src={getUrl(this.props.card.imageUrl)}></img>
                 <div className={"card-body " + this.props.backgroundClass }>

@@ -6,6 +6,9 @@
   src: url('./Fonts/JMHCthulhumbusArcadeUGalt1.woff') format('woff');
 }
 
+@import "Components/BaseCard.scss";
+@import "Components/SectionHeader.scss";
+
 * {
   image-rendering: pixelated;
 }
@@ -14,26 +17,10 @@ body {
   font-weight: 600;
 }
 
-.card-base {
-  font-size: 16px;
-  width: 480px;
-  height: 672px;
-  margin: 1rem auto;
-  padding: 0;
-}
-
-.card-image {
-  height: 224px;
-  width: 100%
-}
-
-.card-body {
-  position: absolute;
-  top: 1rem;
-  width: 480px;
-  height: 672px;
-  padding: 224px 24px 0px 24px;
-  background-size: 100%;
+.card-brand {
+  font-family: 'Cthulhumbus';
+  font-size: 48px;
+  font-weight: 400;
 }
 
 .card-movement {
@@ -46,18 +33,6 @@ body {
   font-size: 104px;
   text-align: center;
   font-weight: 400;
-}
-
-.card-title {
-  font-family: 'Cthulhumbus';
-  height: 56px;
-  margin: 56px 0 24px 0;
-  font-size: 32px;
-  text-align: center;
-  font-weight: 400;
-}
-
-.card-description {
 }
 
 .card-divider {
@@ -109,29 +84,29 @@ body {
   background: url("./Assets/RealCard.png") no-repeat;
   background-size: cover;
   padding: 224px 32px 0px 32px;
-}
 
-.card-body-real .card-stats {
-  display: block;
-  text-align: center;
-}
-
-.card-body-real .card-stat {
-  font-size: 40px;
-  margin-right: 48px;
-}
-
-.card-body-real .card-stat-icon {
-  height: 40px;
-}
-
-.card-body-real hr {
-  height: 2px;
-  background-color: black;
-}
-
-.card-body-real .card-stat-value {
-  margin-right: 8px;
+  .card-stats {
+    display: block;
+    text-align: center;
+  }
+  
+  .card-stat {
+    font-size: 40px;
+    margin-right: 48px;
+  }
+  
+  .card-stat-icon {
+    height: 40px;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: black;
+  }
+  
+  .card-stat-value {
+    margin-right: 8px;
+  }
 }
 
 /* DreamCard specific */
