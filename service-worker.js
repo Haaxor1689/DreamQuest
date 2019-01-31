@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DreamQuest/precache-manifest.42cb2dba431d156a615ade63556b3b78.js"
+  "/DreamQuest/precache-manifest.1af20803cdd23125729c30ba48873099.js"
 );
 
 workbox.clientsClaim();
