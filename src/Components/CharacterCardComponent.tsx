@@ -32,7 +32,7 @@ export default class CharacterCardComponent extends React.Component<CharacterCar
                 { this.renderSpecial() }
             </div>
             <div className="card-lucidity">
-                { [6,5,4,3,2,1,0].map(i => <div className="card-lucidity-number">{i}</div>) }
+                { [6,5,4,3,2,1,0].map(i => <div className={"card-lucidity-number" + (i === this.props.stats.lucidity ? " card-lucidity-base" : "")}>{i}</div>) }
             </div>
             <div className="card-memory">{this.props.stats.memory}</div>
             <div className="card-slumber">{this.props.stats.slumber}</div>
