@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/js/runtime~main.77dae312.js"
   },
   {
-    "revision": "d2cc8210715e4dac8d9a",
-    "url": "/DreamQuest/static/js/main.d2cc8210.chunk.js"
+    "revision": "c6010d71e0dbe3effddf",
+    "url": "/DreamQuest/static/js/main.c6010d71.chunk.js"
   },
   {
-    "revision": "388a77b671326478fc29",
-    "url": "/DreamQuest/static/js/1.388a77b6.chunk.js"
+    "revision": "e3fa917baf30efe7a680",
+    "url": "/DreamQuest/static/js/1.e3fa917b.chunk.js"
   },
   {
-    "revision": "d2cc8210715e4dac8d9a",
-    "url": "/DreamQuest/static/css/main.c0303b59.chunk.css"
+    "revision": "c6010d71e0dbe3effddf",
+    "url": "/DreamQuest/static/css/main.dbc1940e.chunk.css"
   },
   {
-    "revision": "fd8aa5c7af4c0edef2c91f943dac1a66",
+    "revision": "327ef74be89243b65faafd7f23c2f6ca",
     "url": "/DreamQuest/index.html"
   }
 ];
