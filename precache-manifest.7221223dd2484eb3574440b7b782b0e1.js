@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/TileDream.b605959e.png"
   },
   {
-    "revision": "c75a8dd65a949ae0ece1",
+    "revision": "4c1baa9dec6cc355041c",
     "url": "/DreamQuest/static/css/main.e60a102b.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/TileCursed.5f035022.png"
   },
   {
-    "revision": "c75a8dd65a949ae0ece1",
-    "url": "/DreamQuest/static/js/main.c75a8dd6.chunk.js"
+    "revision": "4c1baa9dec6cc355041c",
+    "url": "/DreamQuest/static/js/main.4c1baa9d.chunk.js"
   },
   {
     "revision": "cc974d7d3085f6fdba14c2ffb3a53559",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/JMHCthulhumbusArcadeUGalt1.fcc01663.woff"
   },
   {
-    "revision": "dc55d1190db817cfc41d2432abccb680",
+    "revision": "0a1df9923da81999d628723bf3797f8e",
     "url": "/DreamQuest/index.html"
   }
 ];

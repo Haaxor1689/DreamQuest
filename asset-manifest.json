@@ -1,7 +1,7 @@
 {
   "main.css": "/DreamQuest/static/css/main.e60a102b.chunk.css",
-  "main.js": "/DreamQuest/static/js/main.c75a8dd6.chunk.js",
-  "main.js.map": "/DreamQuest/static/js/main.c75a8dd6.chunk.js.map",
+  "main.js": "/DreamQuest/static/js/main.4c1baa9d.chunk.js",
+  "main.js.map": "/DreamQuest/static/js/main.4c1baa9d.chunk.js.map",
   "static/js/1.dbcb628f.chunk.js": "/DreamQuest/static/js/1.dbcb628f.chunk.js",
   "static/js/1.dbcb628f.chunk.js.map": "/DreamQuest/static/js/1.dbcb628f.chunk.js.map",
   "runtime~main.js": "/DreamQuest/static/js/runtime~main.77dae312.js",
@@ -23,6 +23,6 @@
   "static/media/index.scss": "/DreamQuest/static/media/JMHCthulhumbusArcadeUGalt1.fcc01663.woff",
   "static/css/main.e60a102b.chunk.css.map": "/DreamQuest/static/css/main.e60a102b.chunk.css.map",
   "index.html": "/DreamQuest/index.html",
-  "precache-manifest.6bfe9f3d38785d5a9a294e289ef49ecd.js": "/DreamQuest/precache-manifest.6bfe9f3d38785d5a9a294e289ef49ecd.js",
+  "precache-manifest.7221223dd2484eb3574440b7b782b0e1.js": "/DreamQuest/precache-manifest.7221223dd2484eb3574440b7b782b0e1.js",
   "service-worker.js": "/DreamQuest/service-worker.js"
 }
