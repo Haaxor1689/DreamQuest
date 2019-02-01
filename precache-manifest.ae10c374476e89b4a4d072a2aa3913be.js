@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/TileDream.b605959e.png"
   },
   {
-    "revision": "4c1baa9dec6cc355041c",
+    "revision": "391d1c82799aaf877361",
     "url": "/DreamQuest/static/css/main.e60a102b.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/TileCursed.5f035022.png"
   },
   {
-    "revision": "4c1baa9dec6cc355041c",
-    "url": "/DreamQuest/static/js/main.4c1baa9d.chunk.js"
+    "revision": "391d1c82799aaf877361",
+    "url": "/DreamQuest/static/js/main.391d1c82.chunk.js"
   },
   {
     "revision": "cc974d7d3085f6fdba14c2ffb3a53559",
@@ -52,20 +52,20 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/TileShortcut.7380523f.png"
   },
   {
-    "revision": "498d7e69798cd5c5eed8b39e7bb2f065",
-    "url": "/DreamQuest/static/media/Gameboard1.498d7e69.png"
+    "revision": "d9d4f247ba72581bac105a449b39ed76",
+    "url": "/DreamQuest/static/media/Gameboard1.d9d4f247.png"
   },
   {
-    "revision": "108f485ab78d7a81db3d9198aaf5f332",
-    "url": "/DreamQuest/static/media/Gameboard2.108f485a.png"
+    "revision": "e32870eafe33d5f48fbb2459e02886af",
+    "url": "/DreamQuest/static/media/Gameboard2.e32870ea.png"
   },
   {
-    "revision": "7073fd1d0e2605a404e9c1e18557c1dd",
-    "url": "/DreamQuest/static/media/Gameboard3.7073fd1d.png"
+    "revision": "2a5f9ef75a51da203a5a75980d1f6de7",
+    "url": "/DreamQuest/static/media/Gameboard3.2a5f9ef7.png"
   },
   {
-    "revision": "77b69c52d565b9b151c34551676c0d0c",
-    "url": "/DreamQuest/static/media/Gameboard4.77b69c52.png"
+    "revision": "42e1cd96e9357b6a48d4749440106602",
+    "url": "/DreamQuest/static/media/Gameboard4.42e1cd96.png"
   },
   {
     "revision": "53f78ea871eedf35f9075c8ef0b7d811",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/DreamQuest/static/media/JMHCthulhumbusArcadeUGalt1.fcc01663.woff"
   },
   {
-    "revision": "0a1df9923da81999d628723bf3797f8e",
+    "revision": "139921a2ece299aaa412d607f85040dd",
     "url": "/DreamQuest/index.html"
   }
 ];
